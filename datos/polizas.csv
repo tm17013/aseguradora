@@ -1,0 +1,801 @@
+﻿ID_Poliza,ID_Cliente,Tipo_Seguro,Monto_Asegurado,Prima_Mensual,Fecha_Inicio,Fecha_Vencimiento,Estado,Vendedor
+POL-0001,321,Hogar,68096.25,47.72,2025-01-26,2026-01-26,Activa,Darío Chacón-Carpio
+POL-0002,66,Automóvil,60238.24,81.5,2025-05-28,2026-05-28,Activa,Aurelio de Amo
+POL-0003,335,Automóvil,76857.82,94.31,2024-11-01,2025-11-01,Vencida,Aitana del Cuervo
+POL-0004,294,Vida,87705.71,35.0,2024-09-06,2025-09-06,Activa,Paco Mate
+POL-0005,104,Agrícola,72023.9,181.06,2024-01-11,2025-01-10,Activa,Eladio Santamaria Carrasco
+POL-0006,29,Hogar,13494.38,198.12,2024-08-06,2025-08-06,Activa,Eugenio Somoza Cárdenas
+POL-0007,254,Hogar,56759.22,151.47,2024-10-31,2025-10-31,Activa,Joaquín Peña Varela
+POL-0008,128,Empresarial,46005.32,148.02,2024-08-03,2025-08-03,Activa,Emperatriz Franch Vélez
+POL-0009,269,Automóvil,40696.18,263.67,2024-04-22,2025-04-22,Activa,Artemio Becerra Sáez
+POL-0010,172,Automóvil,20222.1,74.35,2024-03-31,2025-03-31,Activa,León Santiago Ballester
+POL-0011,160,Vida,23716.28,66.94,2025-07-15,2026-07-15,Activa,Apolinar Plana Baños
+POL-0012,482,Vida,74413.67,260.78,2024-04-03,2025-04-03,Vencida,Ana Belén Serafina Ayllón Piña
+POL-0013,200,Salud,65530.01,84.15,2024-01-07,2025-01-06,Activa,Rebeca Vega
+POL-0014,488,Salud,54944.19,187.47,2025-08-22,2026-08-22,Activa,Marino Palau Manzanares
+POL-0015,19,Salud,40774.48,286.5,2024-09-13,2025-09-13,Activa,Jacinta Mirta Donaire Planas
+POL-0016,127,Salud,79378.28,71.14,2025-08-18,2026-08-18,Vencida,Vinicio Gárate Gilabert
+POL-0017,434,Automóvil,24505.14,44.71,2024-10-30,2025-10-30,Activa,Luciana Alegria Almagro
+POL-0018,104,Hogar,17562.79,297.32,2024-12-20,2025-12-20,Activa,Jacinto Dalmau
+POL-0019,116,Salud,75959.85,98.21,2024-09-12,2025-09-12,Vencida,Amador Pont-Mur
+POL-0020,335,Hogar,33897.27,32.46,2024-12-30,2025-12-30,Activa,Delia Porras Anaya
+POL-0021,74,Hogar,30818.38,55.11,2025-03-27,2026-03-27,Activa,Nidia Ferreras Roma
+POL-0022,119,Agrícola,97844.05,45.89,2025-07-19,2026-07-19,Activa,Prudencio Acevedo Pagès
+POL-0023,44,Automóvil,49732.32,197.14,2024-08-16,2025-08-16,Activa,Soledad Marqués Blázquez
+POL-0024,458,Automóvil,19239.12,209.85,2024-03-09,2025-03-09,Activa,Pío Olivé Bermejo
+POL-0025,35,Automóvil,6129.46,55.24,2024-11-11,2025-11-11,Activa,María Dolores Camps Esteve
+POL-0026,263,Empresarial,98718.98,104.7,2025-10-07,2026-10-07,Activa,Candelas Roig
+POL-0027,268,Hogar,31347.63,298.17,2025-04-20,2026-04-20,Activa,Simón Raimundo Barrera Martínez
+POL-0028,16,Automóvil,28854.04,296.37,2025-04-18,2026-04-18,Activa,Esteban del Tur
+POL-0029,252,Empresarial,72407.75,119.68,2024-01-21,2025-01-20,Activa,Consuelo Amaya Redondo Escrivá
+POL-0030,412,Vida,79592.92,178.91,2024-12-19,2025-12-19,Vencida,Anselma Alejandra Villena Cuesta
+POL-0031,418,Automóvil,27190.8,294.07,2025-04-06,2026-04-06,Activa,Sosimo Torrens
+POL-0032,316,Automóvil,74874.86,34.73,2025-02-23,2026-02-23,Activa,Teobaldo Aller Peláez
+POL-0033,195,Hogar,20420.25,281.62,2025-02-20,2026-02-20,Activa,Martirio Coronado Comas
+POL-0034,425,Salud,36490.2,257.39,2025-02-05,2026-02-05,Activa,Ruth de Rubio
+POL-0035,432,Automóvil,87956.06,30.18,2024-05-03,2025-05-03,Activa,Agustín Cristian Pineda Baró
+POL-0036,146,Salud,72333.0,224.28,2024-12-10,2025-12-10,Activa,José María Rivas Valenciano
+POL-0037,411,Automóvil,33250.36,176.66,2024-08-05,2025-08-05,Vencida,Pepita Uribe Bautista
+POL-0038,77,Vida,96085.92,104.46,2024-05-27,2025-05-27,Activa,José Antonio Figueras-Arranz
+POL-0039,481,Salud,94301.74,228.0,2025-08-07,2026-08-07,Cancelada,Teresita Rosales Soria
+POL-0040,457,Salud,35586.36,123.24,2025-02-19,2026-02-19,Activa,Amelia Salamanca
+POL-0041,113,Salud,26712.31,158.25,2023-10-29,2024-10-28,Activa,Borja Díaz Prado
+POL-0042,205,Empresarial,41233.1,185.24,2024-01-10,2025-01-09,Activa,Albano Blanco Olivera
+POL-0043,193,Agrícola,71424.86,287.61,2025-06-05,2026-06-05,Activa,Carmelita de Sanjuan
+POL-0044,233,Hogar,92833.14,186.05,2025-05-03,2026-05-03,Activa,Clementina Nogueira-Mata
+POL-0045,478,Empresarial,59266.99,82.25,2024-10-16,2025-10-16,Vencida,Maximiano de Huguet
+POL-0046,364,Vida,7770.34,256.89,2024-10-06,2025-10-06,Activa,Aura Crespo Losada
+POL-0047,339,Vida,41532.42,174.36,2024-06-04,2025-06-04,Activa,Marisela Llamas Roca
+POL-0048,300,Automóvil,50015.59,285.7,2024-06-09,2025-06-09,Activa,Lorenzo Ropero Batalla
+POL-0049,408,Vida,48568.9,131.46,2024-03-16,2025-03-16,Activa,Ana Alfonso Gomis
+POL-0050,156,Hogar,12108.71,96.59,2024-01-14,2025-01-13,Activa,Mar Moles Pujol
+POL-0051,179,Empresarial,87916.21,145.59,2025-02-26,2026-02-26,Activa,Eva Gimenez-Meléndez
+POL-0052,363,Hogar,73739.0,34.37,2025-08-21,2026-08-21,Activa,Victor Carrera Llano
+POL-0053,280,Agrícola,59860.69,181.15,2025-09-30,2026-09-30,Vencida,Florencio Melero Osuna
+POL-0054,399,Empresarial,55616.12,229.65,2024-04-07,2025-04-07,Activa,Clara de Sastre
+POL-0055,13,Salud,78018.12,175.75,2024-09-10,2025-09-10,Activa,Rufino de Ríos
+POL-0056,415,Automóvil,36085.73,88.17,2024-06-04,2025-06-04,Activa,Efraín Carbajo Cortés
+POL-0057,168,Empresarial,70830.74,271.22,2024-08-17,2025-08-17,Activa,Clementina Rosalía Ledesma Elías
+POL-0058,255,Vida,23948.96,41.84,2024-02-04,2025-02-03,Activa,Nicanor Ibáñez
+POL-0059,469,Automóvil,86952.29,260.02,2025-09-02,2026-09-02,Activa,Calisto Arranz Costa
+POL-0060,19,Agrícola,81897.38,135.2,2025-02-20,2026-02-20,Activa,Álvaro Cuenca Pelayo
+POL-0061,41,Empresarial,68618.27,197.99,2025-09-18,2026-09-18,Activa,Mateo Jover Arribas
+POL-0062,112,Empresarial,87596.68,92.1,2024-09-04,2025-09-04,Vencida,Jennifer Loreto Garcia Pelayo
+POL-0063,64,Hogar,55056.31,130.56,2024-02-23,2025-02-22,Activa,Edu Castell Duarte
+POL-0064,326,Empresarial,40295.82,273.46,2024-01-11,2025-01-10,Vencida,Bernabé Soto-Madrigal
+POL-0065,184,Salud,38934.36,107.13,2025-02-15,2026-02-15,Activa,Juan Luis Ariño Escobar
+POL-0066,347,Empresarial,51826.22,45.59,2025-06-29,2026-06-29,Activa,Encarna de Segura
+POL-0067,297,Hogar,45377.09,54.6,2023-10-24,2024-10-23,Activa,Gil Oliveras Priego
+POL-0068,288,Agrícola,22614.93,200.88,2025-09-18,2026-09-18,Vencida,Jonatan Mancebo Cadenas
+POL-0069,246,Automóvil,6888.06,215.91,2025-03-19,2026-03-19,Vencida,María Ángeles Mora Bayo
+POL-0070,494,Vida,15600.08,133.27,2024-12-15,2025-12-15,Activa,Lucía Serrano Silva
+POL-0071,497,Salud,76889.65,173.73,2025-07-09,2026-07-09,Activa,Elvira Sierra Grande
+POL-0072,268,Agrícola,66375.15,188.29,2025-05-20,2026-05-20,Cancelada,Geraldo Velasco Montesinos
+POL-0073,400,Empresarial,88053.47,66.71,2025-05-21,2026-05-21,Activa,Humberto Galván Sánchez
+POL-0074,455,Salud,62513.43,263.98,2025-05-13,2026-05-13,Vencida,Ambrosio Grau Ferrández
+POL-0075,44,Salud,90833.61,130.79,2025-08-04,2026-08-04,Activa,Leonardo Vélez Rojas
+POL-0076,71,Automóvil,24940.25,206.11,2024-11-02,2025-11-02,Activa,Horacio Tapia
+POL-0077,473,Hogar,15116.27,140.68,2024-03-29,2025-03-29,Activa,Herberto Duarte-Egea
+POL-0078,134,Hogar,38946.98,171.21,2024-03-18,2025-03-18,Activa,Carla Ramos
+POL-0079,10,Salud,80414.93,212.84,2023-11-15,2024-11-14,Activa,Lupe Sanmartín Rosales
+POL-0080,77,Agrícola,79959.49,143.3,2024-02-14,2025-02-13,Activa,Leonel Perera Navarrete
+POL-0081,190,Empresarial,54145.5,37.61,2024-05-30,2025-05-30,Activa,Lorenzo Páez
+POL-0082,201,Empresarial,9065.82,134.63,2024-12-22,2025-12-22,Activa,Miguela Roman Pino
+POL-0083,240,Vida,83059.93,41.81,2024-11-07,2025-11-07,Activa,Leticia de Diéguez
+POL-0084,441,Automóvil,39077.23,71.03,2024-03-21,2025-03-21,Activa,Alonso Borja Catalán Martorell
+POL-0085,311,Hogar,20858.64,134.7,2024-03-03,2025-03-03,Vencida,Jacinta Sanabria
+POL-0086,108,Salud,62271.49,117.47,2024-04-22,2025-04-22,Activa,Dalila Pou-Villalobos
+POL-0087,76,Salud,78230.12,229.81,2024-07-03,2025-07-03,Vencida,Mauricio Quevedo Alcalde
+POL-0088,431,Hogar,48430.36,97.11,2024-06-30,2025-06-30,Activa,Gerardo Carrera
+POL-0089,428,Vida,66890.14,171.43,2025-03-10,2026-03-10,Activa,Amor Vélez Leiva
+POL-0090,265,Salud,6625.57,146.81,2024-08-04,2025-08-04,Vencida,Luna Río Bermejo
+POL-0091,319,Agrícola,55701.23,46.14,2025-06-30,2026-06-30,Vencida,Juana Abella Millán
+POL-0092,269,Automóvil,14267.53,221.14,2024-01-14,2025-01-13,Activa,Haroldo Aristides González Hernandez
+POL-0093,15,Salud,98330.5,192.2,2025-09-08,2026-09-08,Vencida,Angelina Villaverde Reina
+POL-0094,464,Vida,16799.58,100.4,2025-07-19,2026-07-19,Activa,Rosenda Clementina Luz Falcó
+POL-0095,382,Automóvil,70764.49,94.82,2025-03-18,2026-03-18,Activa,Alcides Alfonso Abascal
+POL-0096,166,Hogar,62367.93,214.17,2024-11-01,2025-11-01,Activa,Víctor Baena Antúnez
+POL-0097,360,Empresarial,47136.62,282.21,2024-02-13,2025-02-12,Vencida,Jerónimo Rocha Bárcena
+POL-0098,219,Agrícola,53054.98,187.34,2024-04-27,2025-04-27,Activa,Nicodemo Catalán Nieto
+POL-0099,23,Salud,7495.27,206.03,2025-07-06,2026-07-06,Activa,Pepe Galvez
+POL-0100,89,Hogar,65633.79,251.76,2023-12-28,2024-12-27,Vencida,Modesta Vendrell Cordero
+POL-0101,274,Vida,37334.38,101.42,2024-09-17,2025-09-17,Activa,Alondra Codina Borrell
+POL-0102,252,Vida,5684.85,112.22,2024-08-12,2025-08-12,Activa,Vanesa Sarabia-Pujol
+POL-0103,179,Vida,16662.14,235.24,2025-01-04,2026-01-04,Activa,Soraya Checa Mármol
+POL-0104,461,Automóvil,60468.27,280.22,2024-01-03,2025-01-02,Vencida,Rosenda Gras-Falcó
+POL-0105,312,Vida,54519.56,297.88,2025-07-11,2026-07-11,Activa,Jonatan Royo Iñiguez
+POL-0106,314,Agrícola,44186.11,139.0,2025-06-03,2026-06-03,Activa,Carlos Macias-Antón
+POL-0107,149,Vida,31445.67,206.12,2024-03-19,2025-03-19,Vencida,Ceferino Hurtado-Rocamora
+POL-0108,84,Empresarial,5707.24,261.42,2024-09-20,2025-09-20,Activa,Laura Criado Domingo
+POL-0109,488,Salud,22152.19,149.58,2025-01-06,2026-01-06,Activa,Dolores Mateos Pablo
+POL-0110,316,Hogar,56610.04,251.49,2024-08-07,2025-08-07,Activa,Leandra Eligia Barbero Carro
+POL-0111,222,Empresarial,51902.03,72.35,2025-01-02,2026-01-02,Activa,Marianela Iborra Vara
+POL-0112,274,Agrícola,24073.94,73.05,2025-08-26,2026-08-26,Activa,Máximo Chaparro Morales
+POL-0113,163,Empresarial,38119.07,254.97,2024-01-29,2025-01-28,Cancelada,Lupe Páez Carmona
+POL-0114,318,Salud,99377.51,297.86,2024-06-12,2025-06-12,Activa,Paulino Benítez Garmendia
+POL-0115,123,Agrícola,81237.04,278.3,2023-12-21,2024-12-20,Cancelada,Ildefonso Espejo Hernández
+POL-0116,389,Salud,87696.67,171.37,2024-05-22,2025-05-22,Activa,Trini Melero Tomé
+POL-0117,92,Empresarial,93084.21,25.66,2024-02-28,2025-02-27,Activa,Eric Porta Carreño
+POL-0118,175,Hogar,69620.64,157.61,2024-04-04,2025-04-04,Vencida,Maricela de Novoa
+POL-0119,367,Automóvil,34888.94,62.91,2025-10-02,2026-10-02,Activa,Isaac Gabaldón Palomino
+POL-0120,433,Agrícola,55673.27,81.44,2023-11-02,2024-11-01,Activa,Julián Páez Zabala
+POL-0121,465,Vida,49734.06,163.8,2025-05-25,2026-05-25,Activa,Purificación Ríos
+POL-0122,98,Automóvil,72033.52,84.83,2024-01-22,2025-01-21,Activa,Gabriela Llorens
+POL-0123,272,Vida,48892.7,225.12,2024-03-15,2025-03-15,Activa,Iván Galan Montero
+POL-0124,172,Automóvil,78272.97,294.79,2025-10-19,2026-10-19,Activa,Nuria Zorrilla Acero
+POL-0125,293,Salud,45868.15,54.16,2024-01-27,2025-01-26,Activa,Nilo Almazán-Cabello
+POL-0126,321,Automóvil,26065.59,252.87,2024-06-26,2025-06-26,Activa,Águeda Cabrera Barroso
+POL-0127,419,Hogar,84795.32,187.72,2024-12-06,2025-12-06,Activa,Gerónimo Ribes Vara
+POL-0128,139,Vida,72474.01,184.94,2024-05-08,2025-05-08,Activa,Pía Nieto Cuesta
+POL-0129,320,Vida,76610.06,80.99,2025-01-21,2026-01-21,Activa,Adelaida García Vilaplana
+POL-0130,183,Automóvil,14937.96,221.13,2024-07-19,2025-07-19,Vencida,Régulo del Cueto
+POL-0131,286,Automóvil,85565.74,191.35,2024-10-26,2025-10-26,Activa,Primitiva de Espada
+POL-0132,196,Hogar,91796.97,27.95,2025-07-14,2026-07-14,Activa,José Figueroa-Rodriguez
+POL-0133,191,Agrícola,79772.45,38.9,2025-03-16,2026-03-16,Vencida,Yolanda Benitez Durán
+POL-0134,281,Automóvil,30488.34,165.07,2025-08-17,2026-08-17,Vencida,Pío Gual-Mínguez
+POL-0135,421,Automóvil,13361.43,103.78,2024-04-24,2025-04-24,Activa,Olegario de Benito
+POL-0136,284,Empresarial,96355.16,225.83,2024-08-15,2025-08-15,Activa,Fulgencio Quintanilla Rodrigo
+POL-0137,350,Agrícola,18957.83,117.57,2025-05-30,2026-05-30,Activa,Augusto Ledesma-Morera
+POL-0138,397,Agrícola,74302.95,231.85,2024-01-06,2025-01-05,Activa,Andrés Felipe Marcos Iglesia
+POL-0139,378,Automóvil,68450.43,110.43,2025-09-19,2026-09-19,Activa,Nélida Santana Belda
+POL-0140,225,Automóvil,29948.62,167.19,2024-11-12,2025-11-12,Activa,Macaria Pellicer Arce
+POL-0141,370,Agrícola,66545.27,27.41,2024-02-12,2025-02-11,Activa,Luciana del Barón
+POL-0142,239,Vida,32158.47,133.96,2025-01-25,2026-01-25,Activa,Lino Perez Frías
+POL-0143,6,Agrícola,32282.46,231.24,2023-12-19,2024-12-18,Activa,Ana Belén Vilalta Escalona
+POL-0144,109,Hogar,61693.85,68.89,2025-03-23,2026-03-23,Vencida,Bernardo Iker Checa Llano
+POL-0145,283,Hogar,88546.82,233.45,2024-12-01,2025-12-01,Activa,Reyes Godoy Granados
+POL-0146,118,Automóvil,45967.81,39.86,2025-08-28,2026-08-28,Activa,Reynaldo Losada Valls
+POL-0147,496,Empresarial,70042.72,117.21,2025-06-30,2026-06-30,Activa,Florentino Juan José Dominguez Rincón
+POL-0148,424,Vida,81146.06,268.06,2025-03-06,2026-03-06,Activa,Toño Granados Gilabert
+POL-0149,198,Automóvil,11687.7,216.56,2024-01-12,2025-01-11,Activa,Custodia Guzman Nicolau
+POL-0150,495,Vida,64522.05,102.65,2025-09-25,2026-09-25,Activa,Paula Olivares Cañellas
+POL-0151,187,Vida,73288.65,128.47,2024-09-17,2025-09-17,Vencida,Heliodoro Domínguez
+POL-0152,59,Agrícola,47256.68,222.78,2024-03-14,2025-03-14,Activa,Ignacio del Manzano
+POL-0153,269,Automóvil,30816.29,225.08,2024-09-26,2025-09-26,Activa,Guillermo Édgar Águila Riera
+POL-0154,293,Empresarial,58467.14,224.37,2025-05-05,2026-05-05,Activa,Anastasia Izaguirre Crespo
+POL-0155,403,Vida,20465.58,227.36,2024-01-06,2025-01-05,Activa,Paca Almagro Galán
+POL-0156,43,Vida,92502.87,189.69,2025-01-04,2026-01-04,Activa,José María Sastre-Castillo
+POL-0157,55,Hogar,64539.02,109.5,2025-01-19,2026-01-19,Activa,Isaías Guillen Catalá
+POL-0158,115,Vida,52076.25,42.07,2024-08-08,2025-08-08,Activa,Macario Cal Amor
+POL-0159,192,Hogar,56849.88,197.44,2025-04-04,2026-04-04,Vencida,Manuelita de Palacios
+POL-0160,97,Automóvil,11104.52,285.5,2023-12-22,2024-12-21,Activa,Aníbal Alberto Carro Ramirez
+POL-0161,135,Hogar,13355.46,228.96,2024-06-29,2025-06-29,Activa,Leonor Casanova Gomila
+POL-0162,296,Automóvil,97349.3,122.58,2025-03-31,2026-03-31,Activa,Eli Bru Costa
+POL-0163,242,Salud,38028.54,230.25,2024-04-22,2025-04-22,Activa,Herminio Bueno Casanova
+POL-0164,168,Agrícola,77909.52,272.31,2024-08-31,2025-08-31,Activa,Emigdio Kike Talavera Mate
+POL-0165,259,Hogar,73085.53,246.07,2023-12-04,2024-12-03,Activa,Dolores Molins-Vidal
+POL-0166,61,Agrícola,57941.66,116.71,2024-09-20,2025-09-20,Activa,Graciana Poza Quevedo
+POL-0167,233,Salud,98667.01,121.67,2024-05-15,2025-05-15,Activa,Heriberto Morcillo-Prada
+POL-0168,400,Hogar,37477.46,153.02,2025-01-26,2026-01-26,Activa,Gaspar Paredes
+POL-0169,212,Hogar,47421.68,106.09,2025-02-23,2026-02-23,Activa,Juan Carlos Amílcar Solano Carballo
+POL-0170,388,Agrícola,86932.1,137.31,2024-11-26,2025-11-26,Activa,Fidela Escribano Luz
+POL-0171,164,Hogar,96759.08,129.95,2025-08-01,2026-08-01,Activa,Álvaro Hernando Nevado Marti
+POL-0172,444,Agrícola,35669.36,104.36,2024-02-19,2025-02-18,Vencida,Adalberto Ramiro Correa Grande
+POL-0173,72,Agrícola,87274.49,245.09,2025-07-05,2026-07-05,Activa,María Teresa Coronado Morales
+POL-0174,40,Salud,73709.98,251.11,2024-11-22,2025-11-22,Cancelada,Carina Palacio Prada
+POL-0175,436,Hogar,27482.12,244.23,2023-12-15,2024-12-14,Activa,Cirino Carnero Sandoval
+POL-0176,261,Empresarial,23678.47,270.4,2024-06-07,2025-06-07,Vencida,Germán Noé Vallejo Posada
+POL-0177,205,Salud,83159.62,143.81,2024-02-16,2025-02-15,Activa,Héctor Quero Mata
+POL-0178,37,Empresarial,61565.04,250.51,2025-07-12,2026-07-12,Activa,Elías Viñas Lobo
+POL-0179,447,Automóvil,44285.19,285.75,2025-06-03,2026-06-03,Activa,Modesta Hierro
+POL-0180,243,Automóvil,27459.4,35.34,2024-01-29,2025-01-28,Activa,Sergio Vázquez Quero
+POL-0181,267,Hogar,38946.38,57.97,2024-02-24,2025-02-23,Activa,Natividad Cabrera Cabrera
+POL-0182,282,Hogar,89481.02,64.98,2024-11-22,2025-11-22,Activa,Demetrio Toro Cobo
+POL-0183,71,Hogar,43931.72,111.69,2024-10-24,2025-10-24,Activa,Máxima Zabaleta
+POL-0184,259,Salud,52145.72,122.6,2024-02-20,2025-02-19,Vencida,Isaura Fernandez Flor
+POL-0185,414,Empresarial,29596.31,189.31,2024-01-14,2025-01-13,Activa,Nadia Lillo Miguel
+POL-0186,278,Automóvil,83435.57,280.43,2024-05-01,2025-05-01,Vencida,Albino Paredes Pacheco
+POL-0187,455,Hogar,68719.74,184.91,2024-06-27,2025-06-27,Activa,Pía Montaña Corbacho
+POL-0188,297,Automóvil,68778.27,224.38,2024-12-11,2025-12-11,Activa,Jessica Cordero Calatayud
+POL-0189,321,Automóvil,69481.4,282.39,2025-04-20,2026-04-20,Activa,Jacinto Milla Chacón
+POL-0190,399,Hogar,51473.27,71.87,2024-09-05,2025-09-05,Activa,Teodosio Castillo
+POL-0191,443,Vida,84926.32,171.93,2025-01-06,2026-01-06,Activa,Mónica Coll Sandoval
+POL-0192,470,Empresarial,49680.56,80.56,2025-10-01,2026-10-01,Activa,Sosimo Alberto Meléndez
+POL-0193,67,Vida,98600.78,250.55,2024-01-13,2025-01-12,Activa,Miguel Neira Paredes
+POL-0194,72,Automóvil,45652.09,274.59,2024-07-16,2025-07-16,Activa,Ainoa Duque Bejarano
+POL-0195,68,Hogar,48685.71,230.98,2024-03-10,2025-03-10,Activa,Candelario de Peinado
+POL-0196,322,Vida,48690.08,284.36,2024-07-26,2025-07-26,Activa,Jenny Baena Agustín
+POL-0197,493,Hogar,56429.93,288.05,2024-02-27,2025-02-26,Activa,Rosenda Gárate-Alonso
+POL-0198,298,Automóvil,21856.42,154.37,2024-10-16,2025-10-16,Vencida,Salomé Lucena Gomila
+POL-0199,38,Hogar,70973.51,85.63,2024-04-13,2025-04-13,Activa,Juan José Salvà Fabra
+POL-0200,69,Empresarial,66659.02,150.67,2024-11-03,2025-11-03,Activa,Nereida Maza Bravo
+POL-0201,55,Vida,66825.56,262.65,2024-03-17,2025-03-17,Activa,Rubén Pelayo Parejo
+POL-0202,462,Hogar,83324.39,146.94,2025-05-11,2026-05-11,Activa,Yésica Blanca Salom
+POL-0203,429,Vida,62360.26,278.06,2024-11-13,2025-11-13,Activa,Teófila Bilbao Neira
+POL-0204,296,Automóvil,72858.17,257.66,2024-10-03,2025-10-03,Activa,Albano Orozco Aguilar
+POL-0205,452,Salud,14435.94,267.67,2025-08-19,2026-08-19,Activa,Alma Vallejo Sureda
+POL-0206,420,Automóvil,60019.52,110.11,2025-10-21,2026-10-21,Activa,Aureliano Heredia Valencia
+POL-0207,165,Agrícola,37300.74,98.39,2024-11-22,2025-11-22,Vencida,Martin Patiño-Somoza
+POL-0208,144,Salud,59444.85,121.61,2024-05-26,2025-05-26,Activa,Andrés Felipe Blanca Barranco
+POL-0209,308,Salud,26892.62,39.3,2024-02-26,2025-02-25,Activa,Primitivo del Bonilla
+POL-0210,277,Hogar,52631.66,100.08,2024-07-13,2025-07-13,Vencida,Conrado Alarcón Ramos
+POL-0211,73,Salud,64440.7,150.04,2025-08-04,2026-08-04,Activa,Pío de Varela
+POL-0212,467,Empresarial,22823.67,156.02,2025-09-16,2026-09-16,Activa,Eustaquio Belda Cortina
+POL-0213,432,Agrícola,64492.9,170.3,2025-02-05,2026-02-05,Activa,Quirino Marco
+POL-0214,400,Agrícola,48675.35,75.37,2025-02-02,2026-02-02,Activa,Micaela Alberto-Azorin
+POL-0215,86,Hogar,22676.91,92.55,2025-04-22,2026-04-22,Activa,Ágata Barrios Neira
+POL-0216,55,Automóvil,52116.74,152.28,2024-01-03,2025-01-02,Activa,Aitor Manzanares Pulido
+POL-0217,223,Hogar,26815.76,200.35,2024-12-14,2025-12-14,Vencida,Vilma Sandoval Sanmartín
+POL-0218,121,Automóvil,77400.59,63.46,2025-03-07,2026-03-07,Activa,Chema Guerra Galiano
+POL-0219,186,Automóvil,27862.14,94.12,2024-11-09,2025-11-09,Activa,Jordán Salamanca Madrid
+POL-0220,42,Empresarial,77914.89,90.95,2024-05-18,2025-05-18,Activa,Ceferino Norberto Flor Álamo
+POL-0221,16,Agrícola,67725.87,86.51,2025-01-02,2026-01-02,Activa,Seve Puente Tamayo
+POL-0222,379,Agrícola,67956.72,89.69,2024-02-15,2025-02-14,Activa,Armando Segovia-Paz
+POL-0223,432,Agrícola,66003.35,143.26,2024-07-31,2025-07-31,Activa,Iker Mateo Duran
+POL-0224,285,Vida,52098.87,126.35,2025-04-13,2026-04-13,Vencida,Dani Iriarte Martín
+POL-0225,346,Vida,65434.69,107.51,2023-12-01,2024-11-30,Activa,Clara Hernandez Villalba
+POL-0226,424,Empresarial,16334.23,89.36,2025-10-07,2026-10-07,Activa,Clímaco de Macías
+POL-0227,249,Vida,31813.5,93.8,2025-10-18,2026-10-18,Activa,Jose Antonio del Infante
+POL-0228,332,Empresarial,16981.15,58.11,2025-02-15,2026-02-15,Activa,Arturo Mora Codina
+POL-0229,363,Automóvil,22644.18,204.37,2025-09-06,2026-09-06,Activa,Cayetana Sáez Viñas
+POL-0230,224,Vida,23670.88,231.36,2025-08-20,2026-08-20,Activa,Rita Agullo Llanos
+POL-0231,19,Salud,8645.37,52.5,2024-12-10,2025-12-10,Activa,Pío Guillermo Calvo Infante
+POL-0232,132,Empresarial,77371.06,199.05,2025-09-29,2026-09-29,Activa,Patricio Perez Verdejo
+POL-0233,283,Automóvil,49157.61,98.81,2025-08-13,2026-08-13,Activa,Agustina Yaiza Requena Silva
+POL-0234,478,Empresarial,10468.89,129.42,2024-08-26,2025-08-26,Activa,Abilio de Rios
+POL-0235,100,Empresarial,80406.2,50.28,2024-07-29,2025-07-29,Activa,Santos Borrego Pozo
+POL-0236,149,Agrícola,42431.4,63.66,2024-09-21,2025-09-21,Activa,Emelina Guitart-Jaén
+POL-0237,242,Hogar,99283.49,97.97,2024-07-20,2025-07-20,Vencida,Natividad Juan Bernat
+POL-0238,248,Agrícola,37038.28,230.31,2025-07-28,2026-07-28,Activa,Hernando del Larrea
+POL-0239,456,Salud,80485.06,50.07,2024-05-17,2025-05-17,Activa,Jose Luis Angulo Carretero
+POL-0240,290,Vida,69558.35,254.71,2025-05-17,2026-05-17,Activa,Palmira Alcalá
+POL-0241,149,Empresarial,98167.73,263.61,2024-01-27,2025-01-26,Activa,Rubén Carlito Quirós Llanos
+POL-0242,397,Empresarial,57092.2,231.08,2025-07-17,2026-07-17,Activa,Efraín Isern-Galiano
+POL-0243,464,Vida,28328.28,193.98,2024-08-19,2025-08-19,Activa,Edgardo Acevedo Catalá
+POL-0244,2,Empresarial,31560.88,168.7,2025-05-20,2026-05-20,Vencida,Cipriano Abad Pujol
+POL-0245,499,Empresarial,17888.74,194.69,2024-07-02,2025-07-02,Activa,Poncio de Torres
+POL-0246,165,Vida,73937.63,198.15,2024-08-28,2025-08-28,Activa,Rosalía Azcona Bolaños
+POL-0247,108,Empresarial,60010.94,78.87,2024-12-07,2025-12-07,Activa,María Luisa Adela Llanos Segura
+POL-0248,9,Empresarial,36327.93,103.0,2024-03-19,2025-03-19,Activa,Sigfrido Ramón Barberá
+POL-0249,9,Automóvil,33882.89,280.02,2025-05-08,2026-05-08,Vencida,Angelino Jerez Ruiz
+POL-0250,150,Automóvil,80354.0,176.75,2025-08-22,2026-08-22,Activa,Alcides Pelayo-Moya
+POL-0251,90,Automóvil,47068.11,202.5,2024-12-28,2025-12-28,Activa,Graciana Benavente Cuervo
+POL-0252,354,Hogar,18235.57,221.11,2024-02-12,2025-02-11,Activa,Flavio Giner Lerma
+POL-0253,207,Empresarial,19247.89,217.94,2025-07-22,2026-07-22,Activa,Graciana del Céspedes
+POL-0254,279,Automóvil,87602.25,178.36,2024-05-29,2025-05-29,Activa,Yaiza de Pellicer
+POL-0255,4,Automóvil,72147.71,207.62,2025-10-16,2026-10-16,Activa,Ángela Clotilde Nadal Cabrero
+POL-0256,425,Vida,96104.32,175.01,2025-01-27,2026-01-27,Activa,Ascensión Viana-Cáceres
+POL-0257,321,Salud,15941.15,296.04,2024-06-21,2025-06-21,Activa,María Manuela Sosa Cerezo
+POL-0258,196,Empresarial,84248.88,29.67,2025-09-29,2026-09-29,Activa,Apolinar Juliá Cabello
+POL-0259,28,Agrícola,98782.76,54.28,2024-11-27,2025-11-27,Activa,Bernarda Méndez-Santana
+POL-0260,448,Automóvil,92701.02,199.58,2023-11-13,2024-11-12,Activa,Isaías Olmo Jáuregui
+POL-0261,179,Hogar,63826.07,262.65,2025-05-29,2026-05-29,Activa,Brígida Jaén Quintanilla
+POL-0262,469,Vida,34698.61,59.59,2024-06-25,2025-06-25,Activa,Zaida Carrión Pellicer
+POL-0263,472,Empresarial,76858.6,95.19,2023-10-29,2024-10-28,Activa,Rosalina Velasco-Olivé
+POL-0264,268,Hogar,33700.2,209.48,2025-09-04,2026-09-04,Activa,Delfina Ferrera Requena
+POL-0265,52,Agrícola,78794.3,208.99,2024-04-20,2025-04-20,Activa,Román Castillo Serna
+POL-0266,149,Automóvil,49114.55,140.51,2024-02-23,2025-02-22,Activa,Eulalia Flora Guzman Torrecilla
+POL-0267,95,Vida,6226.62,191.03,2024-07-06,2025-07-06,Activa,Reyna Alonso Bayo
+POL-0268,157,Agrícola,67803.92,231.78,2024-11-16,2025-11-16,Activa,Clímaco Ochoa Nevado
+POL-0269,393,Vida,41207.03,230.52,2025-03-28,2026-03-28,Cancelada,Maxi Uriarte Vallés
+POL-0270,35,Agrícola,78177.21,264.92,2024-09-23,2025-09-23,Activa,Herminia de Villaverde
+POL-0271,426,Empresarial,6858.47,105.06,2025-09-22,2026-09-22,Vencida,Alicia Salinas Cárdenas
+POL-0272,488,Empresarial,26902.26,238.09,2025-09-06,2026-09-06,Activa,Eugenio Correa Lucas
+POL-0273,397,Hogar,46638.03,53.22,2024-03-15,2025-03-15,Vencida,Ciro Pastor Sureda
+POL-0274,383,Salud,62970.7,273.98,2024-07-17,2025-07-17,Activa,Salvador Faustino Gelabert Solana
+POL-0275,58,Empresarial,89717.63,198.38,2025-08-02,2026-08-02,Activa,Sebastián Benítez Baquero
+POL-0276,362,Automóvil,47786.23,83.74,2025-01-25,2026-01-25,Activa,Ariel Leon
+POL-0277,453,Vida,17912.38,184.53,2023-12-21,2024-12-20,Activa,Adrián Morata Benavent
+POL-0278,203,Empresarial,67942.7,160.97,2024-09-28,2025-09-28,Activa,Perlita de Bosch
+POL-0279,460,Agrícola,17342.02,38.38,2025-02-03,2026-02-03,Activa,Galo Gordillo Huguet
+POL-0280,372,Salud,97929.47,27.29,2024-03-10,2025-03-10,Activa,Aníbal Taboada Yuste
+POL-0281,330,Agrícola,49230.33,261.33,2024-04-10,2025-04-10,Vencida,Visitación Porras Solera
+POL-0282,439,Agrícola,83868.8,80.64,2025-02-04,2026-02-04,Activa,Griselda Sandoval Oliva
+POL-0283,405,Vida,93273.67,202.87,2024-04-05,2025-04-05,Activa,Leticia Jáuregui
+POL-0284,399,Vida,46017.41,60.52,2025-04-13,2026-04-13,Activa,Inés Fortuny Lasa
+POL-0285,493,Agrícola,25399.06,137.86,2024-04-09,2025-04-09,Activa,Jordi Carro Saez
+POL-0286,487,Automóvil,89894.69,106.96,2025-06-10,2026-06-10,Activa,Fausto Valcárcel Aguado
+POL-0287,300,Vida,82057.91,190.12,2023-12-25,2024-12-24,Activa,Nazaret Fernandez
+POL-0288,222,Hogar,43540.68,40.18,2024-03-05,2025-03-05,Cancelada,Cristian Montalbán-Perea
+POL-0289,66,Empresarial,68189.41,46.06,2024-05-30,2025-05-30,Activa,Guillermo Ferrándiz Román
+POL-0290,322,Vida,63766.94,173.48,2024-01-26,2025-01-25,Activa,José Ángel Baquero Llano
+POL-0291,326,Automóvil,57092.14,121.63,2024-06-08,2025-06-08,Activa,Herminia Cazorla-Carvajal
+POL-0292,35,Vida,14258.05,297.28,2025-04-29,2026-04-29,Cancelada,Julia Crespo Valentín
+POL-0293,339,Vida,56182.5,142.2,2025-09-26,2026-09-26,Activa,Carlos Cal
+POL-0294,158,Agrícola,72299.44,270.82,2025-05-17,2026-05-17,Vencida,Cristóbal Heras Moles
+POL-0295,445,Automóvil,29738.1,161.37,2025-07-27,2026-07-27,Cancelada,Pepita Melania Almeida Salcedo
+POL-0296,470,Empresarial,85898.49,243.58,2024-12-25,2025-12-25,Activa,Curro Checa-Prat
+POL-0297,315,Empresarial,81281.1,59.91,2025-03-30,2026-03-30,Activa,Celia Manso Alvarado
+POL-0298,77,Vida,16089.82,258.5,2025-05-10,2026-05-10,Vencida,Valerio Laguna Marquez
+POL-0299,281,Empresarial,94462.61,127.22,2024-05-10,2025-05-10,Activa,Rafa Carlos Cabezas
+POL-0300,286,Empresarial,77158.7,109.84,2024-09-19,2025-09-19,Activa,Julio Juliá Rojas
+POL-0301,43,Vida,16955.94,163.9,2025-08-08,2026-08-08,Activa,Blanca Plana Beltran
+POL-0302,263,Automóvil,56610.64,92.31,2025-06-30,2026-06-30,Vencida,Fernanda Ibañez Garrido
+POL-0303,403,Hogar,88991.22,94.82,2024-02-20,2025-02-19,Activa,Clemente de Losada
+POL-0304,96,Automóvil,77350.82,140.83,2024-09-20,2025-09-20,Activa,Rufino Manzano-Roig
+POL-0305,218,Agrícola,6162.86,116.86,2023-11-13,2024-11-12,Activa,Gilberto Torrecilla-Rey
+POL-0306,59,Empresarial,16822.29,150.46,2024-02-02,2025-02-01,Activa,Cristina Fuster González
+POL-0307,465,Agrícola,98174.74,129.15,2025-06-10,2026-06-10,Activa,Nicolás Escobar Romero
+POL-0308,235,Automóvil,96993.25,294.36,2025-05-27,2026-05-27,Activa,Ágata Claudia Cañete Prada
+POL-0309,153,Vida,36021.01,289.2,2025-06-20,2026-06-20,Activa,Hector Hugo Donaire Cortés
+POL-0310,5,Vida,33729.59,30.87,2025-09-01,2026-09-01,Activa,Albano Barroso Amigó
+POL-0311,6,Hogar,20273.76,199.84,2024-07-13,2025-07-13,Activa,Clotilde Perea Mateos
+POL-0312,386,Agrícola,86480.61,151.87,2025-09-12,2026-09-12,Activa,Trinidad Rocío Cuevas Arnaiz
+POL-0313,42,Vida,57274.86,86.73,2024-08-31,2025-08-31,Activa,Aroa Cabrera Gilabert
+POL-0314,431,Automóvil,65598.32,101.8,2024-09-11,2025-09-11,Activa,Leonel Cuervo-Parra
+POL-0315,223,Vida,79064.0,200.99,2023-12-14,2024-12-13,Activa,Bruno Corominas Pazos
+POL-0316,102,Hogar,70725.02,262.46,2025-09-29,2026-09-29,Activa,Aristides Alemany Jiménez
+POL-0317,129,Hogar,31096.38,261.9,2023-11-02,2024-11-01,Activa,Noelia Vaquero
+POL-0318,55,Agrícola,54503.94,37.96,2025-08-24,2026-08-24,Activa,Celso Alvarado-Rosselló
+POL-0319,112,Salud,88511.76,270.57,2025-02-28,2026-02-28,Vencida,Edelmiro Serrano Morell
+POL-0320,461,Empresarial,51693.51,144.39,2025-04-06,2026-04-06,Activa,Maricela Diez
+POL-0321,484,Hogar,36183.35,275.91,2025-09-28,2026-09-28,Activa,Filomena Bello Gilabert
+POL-0322,292,Salud,66060.64,70.39,2024-06-19,2025-06-19,Activa,Chus Ainoa Garriga Acero
+POL-0323,353,Hogar,15360.82,190.86,2024-12-09,2025-12-09,Activa,Juan Pablo Amado Roura Torrijos
+POL-0324,248,Agrícola,64463.23,211.33,2024-02-09,2025-02-08,Activa,Amaro Velázquez Patiño
+POL-0325,63,Salud,55866.59,93.98,2025-06-20,2026-06-20,Cancelada,Susana Corral Segura
+POL-0326,68,Agrícola,92490.25,242.99,2025-09-27,2026-09-27,Vencida,Samanta del Roca
+POL-0327,362,Automóvil,42090.67,116.65,2025-01-30,2026-01-30,Activa,Maricruz Folch Villena
+POL-0328,64,Empresarial,9346.42,244.34,2024-05-11,2025-05-11,Activa,Jessica Anaya Bolaños
+POL-0329,396,Empresarial,99463.57,184.39,2023-12-11,2024-12-10,Vencida,Hernando Crespi Figueroa
+POL-0330,433,Vida,63526.55,64.22,2025-06-06,2026-06-06,Activa,Maricruz León-Salgado
+POL-0331,27,Vida,51445.25,179.55,2025-01-09,2026-01-09,Vencida,Florentino Coronado Montesinos
+POL-0332,193,Automóvil,93035.01,186.15,2023-10-27,2024-10-26,Activa,Danilo del Pujol
+POL-0333,52,Agrícola,8140.43,217.03,2024-07-15,2025-07-15,Activa,Trini Neira Peinado
+POL-0334,124,Vida,85179.11,263.27,2025-08-08,2026-08-08,Activa,Emma Avilés Castells
+POL-0335,489,Salud,71425.71,235.52,2025-08-13,2026-08-13,Vencida,Otilia de Pombo
+POL-0336,496,Automóvil,68296.05,88.02,2025-10-12,2026-10-12,Activa,Sara Donaire Villaverde
+POL-0337,118,Salud,89523.6,30.95,2024-02-23,2025-02-22,Activa,Martín Heras Llamas
+POL-0338,15,Agrícola,64957.18,170.9,2024-10-29,2025-10-29,Activa,Elvira Batalla Garriga
+POL-0339,361,Vida,82752.63,208.32,2024-03-08,2025-03-08,Activa,Felix Merino Rivera
+POL-0340,322,Salud,16290.01,163.87,2024-04-18,2025-04-18,Vencida,Perla Franch
+POL-0341,176,Empresarial,75116.0,298.78,2024-10-04,2025-10-04,Activa,Olalla Saavedra-Rosselló
+POL-0342,300,Salud,86284.28,39.19,2024-12-15,2025-12-15,Activa,Dolores Carrión Codina
+POL-0343,446,Empresarial,99852.3,163.0,2025-04-30,2026-04-30,Activa,Inés Llamas Carlos
+POL-0344,156,Salud,15314.47,288.24,2025-04-15,2026-04-15,Activa,Elodia Bayo-Villalonga
+POL-0345,111,Hogar,94031.77,131.95,2025-09-05,2026-09-05,Vencida,Olivia del Leon
+POL-0346,418,Salud,61409.55,156.4,2025-09-13,2026-09-13,Activa,Anna Camacho Gallo
+POL-0347,109,Empresarial,52150.82,181.11,2023-11-01,2024-10-31,Vencida,Benigna Milla
+POL-0348,205,Vida,44266.02,240.38,2025-09-18,2026-09-18,Activa,Ildefonso Agustín Gelabert
+POL-0349,414,Vida,60475.03,231.55,2024-09-09,2025-09-09,Activa,Tere Cecilia Llanos Madrid
+POL-0350,257,Vida,95782.36,198.49,2025-09-29,2026-09-29,Activa,Mercedes Cortés González
+POL-0351,8,Empresarial,38817.94,123.02,2025-10-13,2026-10-13,Vencida,Eric Tello-Huertas
+POL-0352,163,Automóvil,60831.04,290.96,2024-01-18,2025-01-17,Activa,Celestina Gisbert
+POL-0353,192,Salud,61970.17,253.3,2025-08-27,2026-08-27,Activa,Felipe Gargallo Maestre
+POL-0354,310,Vida,79692.51,120.53,2025-01-09,2026-01-09,Vencida,Maximiano del Sala
+POL-0355,433,Empresarial,89739.81,284.43,2024-01-26,2025-01-25,Vencida,Baltasar del Barral
+POL-0356,344,Agrícola,29089.67,29.17,2024-12-01,2025-12-01,Activa,Eric Arenas-Echeverría
+POL-0357,190,Vida,59025.6,257.45,2024-07-24,2025-07-24,Activa,Javiera Porcel Trujillo
+POL-0358,208,Empresarial,52542.98,198.72,2024-05-03,2025-05-03,Activa,María Jesús Parra Porta
+POL-0359,2,Hogar,80428.31,160.6,2025-10-15,2026-10-15,Activa,Esther Donoso Ayuso
+POL-0360,338,Automóvil,23860.5,136.08,2025-09-19,2026-09-19,Activa,Curro Montaña Román
+POL-0361,382,Automóvil,23073.41,186.43,2024-02-27,2025-02-26,Activa,Eva Enríquez-Cuervo
+POL-0362,415,Agrícola,51685.42,88.41,2024-08-02,2025-08-02,Activa,Belén Cruz Pastor
+POL-0363,341,Agrícola,22700.55,102.81,2025-10-10,2026-10-10,Vencida,Mariano Fuente
+POL-0364,463,Automóvil,58099.69,161.7,2024-01-01,2024-12-31,Activa,Ramiro Barbero Fajardo
+POL-0365,119,Empresarial,8814.41,32.68,2023-11-03,2024-11-02,Activa,Oriana Somoza Arroyo
+POL-0366,389,Salud,43716.01,99.04,2024-06-13,2025-06-13,Activa,Porfirio Mariño Benítez
+POL-0367,220,Salud,55701.88,134.57,2023-12-23,2024-12-22,Activa,Erasmo Cánovas-Arribas
+POL-0368,369,Hogar,12220.02,171.08,2024-10-09,2025-10-09,Cancelada,Nadia Carrión Reig
+POL-0369,447,Automóvil,10712.34,183.33,2025-10-06,2026-10-06,Activa,Erasmo del Luís
+POL-0370,492,Vida,89491.19,265.79,2023-12-03,2024-12-02,Activa,Cloe Cortina Ruiz
+POL-0371,286,Salud,93220.9,97.81,2025-08-17,2026-08-17,Activa,Néstor Castañeda Márquez
+POL-0372,134,Automóvil,38391.05,33.45,2024-10-13,2025-10-13,Activa,Aitor Gomez Aparicio
+POL-0373,111,Automóvil,71328.8,138.57,2024-04-06,2025-04-06,Activa,Violeta Albero Jódar
+POL-0374,195,Vida,21337.71,245.52,2025-02-08,2026-02-08,Activa,Dionisio Anglada
+POL-0375,276,Agrícola,17857.26,191.14,2024-02-01,2025-01-31,Activa,Gabriel de Novoa
+POL-0376,184,Vida,41656.89,96.82,2025-04-29,2026-04-29,Activa,Lucas Pujadas Castells
+POL-0377,372,Salud,68038.45,194.85,2024-01-12,2025-01-11,Vencida,Aníbal Solís Ayllón
+POL-0378,127,Empresarial,41393.83,61.23,2025-05-14,2026-05-14,Activa,Macarena Jaume Balaguer
+POL-0379,361,Empresarial,14988.11,132.26,2024-10-20,2025-10-20,Activa,Eli Gelabert Lledó
+POL-0380,129,Agrícola,55103.89,289.7,2024-06-27,2025-06-27,Activa,Plácido Frías
+POL-0381,175,Empresarial,47320.33,182.91,2025-10-16,2026-10-16,Activa,Aarón Blanca Pereira
+POL-0382,345,Hogar,73016.16,50.23,2024-12-02,2025-12-02,Vencida,José Ángel Montenegro Lerma
+POL-0383,366,Vida,57128.54,35.25,2024-07-28,2025-07-28,Vencida,Guiomar Márquez Bárcena
+POL-0384,238,Vida,40031.97,50.19,2025-05-08,2026-05-08,Vencida,Cebrián Borja-Sales
+POL-0385,454,Salud,65250.57,84.19,2025-08-24,2026-08-24,Activa,Pastora Delgado Piñeiro
+POL-0386,311,Hogar,63864.08,54.69,2025-09-30,2026-09-30,Activa,Abraham Octavio Pinto Villaverde
+POL-0387,396,Automóvil,17648.92,254.17,2025-01-03,2026-01-03,Vencida,Encarnita Riquelme Roldán
+POL-0388,491,Salud,13875.14,87.83,2025-02-07,2026-02-07,Activa,Rosario Arribas-Miguel
+POL-0389,147,Vida,68904.36,216.96,2024-03-26,2025-03-26,Activa,Hermenegildo Espejo Castell
+POL-0390,261,Automóvil,17123.69,193.11,2025-08-07,2026-08-07,Vencida,Chelo Pacheco Ruiz
+POL-0391,434,Empresarial,96911.68,203.06,2024-10-21,2025-10-21,Activa,Hermenegildo Ferrán Puig
+POL-0392,161,Automóvil,17493.05,208.75,2024-11-28,2025-11-28,Activa,Flavio del Prada
+POL-0393,482,Hogar,57883.16,160.49,2024-06-07,2025-06-07,Vencida,Andrés Moisés Múñiz Bayo
+POL-0394,107,Automóvil,32738.86,109.0,2024-01-31,2025-01-30,Activa,Virgilio Cosme Salmerón Guzman
+POL-0395,108,Agrícola,11261.46,267.82,2024-11-14,2025-11-14,Cancelada,Tomasa del Vall
+POL-0396,320,Empresarial,99548.47,296.14,2023-11-01,2024-10-31,Activa,Roque Quirós Coll
+POL-0397,450,Automóvil,82014.94,205.9,2024-06-05,2025-06-05,Vencida,Raimundo Raúl Fajardo Almazán
+POL-0398,193,Vida,90550.1,200.14,2025-01-29,2026-01-29,Activa,Agustina Alba Querol
+POL-0399,308,Agrícola,5089.28,299.72,2025-02-19,2026-02-19,Activa,Luisa Narváez Rosa
+POL-0400,461,Automóvil,53006.67,60.41,2025-03-06,2026-03-06,Activa,Vito Valenzuela Castilla
+POL-0401,443,Vida,8357.51,63.82,2025-02-24,2026-02-24,Vencida,Natalia Benavent-Campos
+POL-0402,353,Salud,11772.45,262.5,2024-05-17,2025-05-17,Activa,Primitivo Codina Rincón
+POL-0403,453,Vida,65159.83,135.13,2025-06-05,2026-06-05,Activa,Serafina Canals-Amigó
+POL-0404,416,Salud,66426.71,103.51,2024-01-31,2025-01-30,Activa,Claudio Galán Escalona
+POL-0405,22,Automóvil,82896.56,228.0,2025-04-22,2026-04-22,Activa,Jose Angel Murcia Navarrete
+POL-0406,130,Vida,96790.55,213.91,2024-11-18,2025-11-18,Vencida,Amando Huerta Coello
+POL-0407,269,Automóvil,67345.74,27.82,2025-06-17,2026-06-17,Activa,Valentina Fábregas Alcaraz
+POL-0408,131,Salud,27572.26,179.84,2024-12-02,2025-12-02,Activa,Esteban Atienza Cepeda
+POL-0409,269,Empresarial,88649.58,292.08,2024-05-16,2025-05-16,Vencida,Emperatriz Doménech Cortés
+POL-0410,83,Salud,76753.05,150.41,2025-08-18,2026-08-18,Activa,Jose Francisco Casemiro Mate Sosa
+POL-0411,63,Salud,62024.14,205.13,2023-11-13,2024-11-12,Vencida,Ágata Borja-Pinedo
+POL-0412,187,Vida,5207.28,210.51,2025-09-23,2026-09-23,Activa,Úrsula Suárez Goñi
+POL-0413,178,Salud,88569.12,121.81,2024-03-12,2025-03-12,Activa,María Manuela Morera-Vizcaíno
+POL-0414,11,Hogar,88881.22,171.43,2025-05-09,2026-05-09,Activa,Domitila Perera Gras
+POL-0415,347,Agrícola,5141.74,163.95,2025-05-30,2026-05-30,Activa,Donato Girón
+POL-0416,44,Salud,8979.56,123.68,2024-04-18,2025-04-18,Activa,Heriberto Sotelo Sans
+POL-0417,434,Hogar,65458.02,147.42,2024-08-09,2025-08-09,Activa,Yéssica del Cerro
+POL-0418,97,Hogar,61971.64,78.13,2023-11-29,2024-11-28,Activa,Cecilio Escobar Iglesias
+POL-0419,303,Vida,8590.47,180.35,2023-11-20,2024-11-19,Activa,Otilia Figueroa
+POL-0420,453,Empresarial,69963.64,26.61,2024-04-17,2025-04-17,Activa,Etelvina de Sancho
+POL-0421,489,Automóvil,31399.3,143.33,2025-01-13,2026-01-13,Vencida,Lorenzo Fajardo Poza
+POL-0422,223,Agrícola,40742.16,185.31,2023-12-13,2024-12-12,Activa,Eutimio Ramis-Carrillo
+POL-0423,62,Automóvil,21267.94,155.14,2024-09-27,2025-09-27,Activa,Cristóbal Isern Caro
+POL-0424,100,Hogar,65986.93,112.98,2025-04-11,2026-04-11,Activa,Leandro Cano Pinilla
+POL-0425,420,Salud,62099.04,108.1,2024-10-04,2025-10-04,Activa,Osvaldo Vidal Alegria
+POL-0426,135,Hogar,66866.67,115.47,2025-01-01,2026-01-01,Activa,Rafael Viña Parra
+POL-0427,44,Vida,62229.11,53.43,2025-06-18,2026-06-18,Activa,Lalo Coll Falcó
+POL-0428,357,Hogar,61868.06,234.14,2025-04-29,2026-04-29,Activa,Bartolomé del Morillo
+POL-0429,116,Agrícola,33178.9,148.64,2023-12-02,2024-12-01,Activa,Julián Ballesteros Carmona
+POL-0430,300,Hogar,67226.08,47.36,2025-07-27,2026-07-27,Vencida,Eugenia Segura Andreu
+POL-0431,135,Agrícola,19385.6,262.21,2024-09-03,2025-09-03,Activa,Luisa Carreño-Peralta
+POL-0432,89,Hogar,27035.23,223.13,2025-06-15,2026-06-15,Activa,Adán Garay Campoy
+POL-0433,219,Automóvil,26293.56,42.12,2025-08-09,2026-08-09,Activa,Damián Palma Figueroa
+POL-0434,76,Hogar,26063.23,114.85,2025-05-28,2026-05-28,Activa,Débora Dalmau Almeida
+POL-0435,155,Agrícola,43217.96,186.56,2025-06-04,2026-06-04,Activa,Fabio Valera Soriano
+POL-0436,162,Agrícola,44144.38,278.47,2024-12-29,2025-12-29,Activa,Yéssica Vilaplana Sureda
+POL-0437,272,Vida,9182.0,101.28,2024-02-27,2025-02-26,Vencida,Saturnino Gallego Vidal
+POL-0438,449,Automóvil,80043.25,33.11,2025-08-01,2026-08-01,Vencida,Cruz Nuñez Campoy
+POL-0439,146,Empresarial,59532.28,188.25,2024-11-04,2025-11-04,Vencida,Maricela Bravo Delgado
+POL-0440,245,Vida,62779.96,148.57,2025-09-23,2026-09-23,Vencida,Roberta Rosa María Canales Cortés
+POL-0441,345,Empresarial,55931.05,228.66,2024-06-28,2025-06-28,Activa,Claudio Gómez-Cardona
+POL-0442,196,Automóvil,63609.15,184.2,2025-08-05,2026-08-05,Activa,Reyes Agustí
+POL-0443,498,Salud,85747.55,220.35,2024-03-05,2025-03-05,Activa,Araceli Duran Echevarría
+POL-0444,315,Automóvil,37449.52,235.45,2024-07-01,2025-07-01,Activa,Seve Murcia Navarro
+POL-0445,440,Automóvil,54844.37,248.94,2023-11-15,2024-11-14,Activa,Gisela Quintana Marti
+POL-0446,198,Hogar,59568.49,190.66,2025-03-21,2026-03-21,Activa,Roldán Pozuelo Granados
+POL-0447,160,Agrícola,22312.73,259.27,2024-11-12,2025-11-12,Activa,Anastasia Osorio Granados
+POL-0448,117,Hogar,83820.81,142.15,2024-03-17,2025-03-17,Activa,María Luisa de Montero
+POL-0449,288,Salud,44928.49,106.88,2025-02-20,2026-02-20,Vencida,Eliseo Alegre
+POL-0450,391,Automóvil,57951.47,133.5,2024-12-27,2025-12-27,Activa,Sancho Roselló Torrents
+POL-0451,307,Hogar,18511.22,236.29,2024-01-07,2025-01-06,Vencida,Chuy Pont-Molins
+POL-0452,390,Vida,81103.05,116.69,2024-09-10,2025-09-10,Cancelada,Renata Isabel Sacristán Leiva
+POL-0453,431,Hogar,35134.69,261.66,2024-12-11,2025-12-11,Activa,Ignacia Bueno Barón
+POL-0454,441,Automóvil,81217.15,296.17,2025-03-04,2026-03-04,Activa,Lupe Pi Ramirez
+POL-0455,334,Hogar,56993.65,118.09,2025-07-07,2026-07-07,Activa,Patricia Cal Giralt
+POL-0456,76,Automóvil,8974.72,109.02,2025-02-14,2026-02-14,Activa,Néstor Galindo Torrent
+POL-0457,410,Vida,77243.41,110.46,2024-10-07,2025-10-07,Activa,Jordana Marina Cases Priego
+POL-0458,476,Empresarial,39034.45,89.87,2024-12-27,2025-12-27,Vencida,Nydia Calatayud
+POL-0459,178,Empresarial,97970.95,66.25,2024-03-09,2025-03-09,Activa,Casandra Castells Campillo
+POL-0460,102,Hogar,51573.82,106.18,2025-08-01,2026-08-01,Cancelada,Jacobo Guillén Pujol
+POL-0461,180,Salud,5602.27,238.32,2024-07-16,2025-07-16,Activa,Félix Poza Bru
+POL-0462,142,Agrícola,24299.96,135.66,2024-09-06,2025-09-06,Activa,Fortunato Cuadrado Exposito
+POL-0463,238,Empresarial,66821.65,60.56,2025-06-22,2026-06-22,Activa,Berto Pozo-Expósito
+POL-0464,340,Vida,90402.5,102.59,2023-10-29,2024-10-28,Activa,Fernando Arteaga
+POL-0465,172,Agrícola,67604.95,287.88,2024-06-04,2025-06-04,Cancelada,Cristóbal Ariño Pérez
+POL-0466,203,Hogar,8800.12,232.76,2023-11-06,2024-11-05,Activa,Bernabé Toribio Torrens Valbuena
+POL-0467,427,Agrícola,79998.41,194.68,2024-09-14,2025-09-14,Activa,Sandra del Castell
+POL-0468,419,Hogar,62725.64,37.97,2025-07-17,2026-07-17,Vencida,Ernesto Iglesias Nieto
+POL-0469,240,Vida,67143.8,193.39,2025-02-10,2026-02-10,Activa,Marina Acedo Peñas
+POL-0470,53,Vida,98476.72,255.53,2025-06-25,2026-06-25,Activa,Pepito Porcel Gracia
+POL-0471,81,Automóvil,36931.35,290.46,2024-12-30,2025-12-30,Activa,Chelo Novoa Vélez
+POL-0472,316,Vida,69416.2,102.15,2024-10-21,2025-10-21,Activa,Blanca Galvez Redondo
+POL-0473,8,Hogar,65678.56,205.05,2024-04-27,2025-04-27,Activa,Liliana Capdevila Canals
+POL-0474,84,Hogar,77490.87,230.16,2024-07-14,2025-07-14,Activa,Álvaro García Santamaria
+POL-0475,195,Salud,89699.09,185.6,2025-03-20,2026-03-20,Activa,Javier Matías Albero Morata
+POL-0476,361,Salud,51590.08,147.78,2025-02-18,2026-02-18,Cancelada,Loida Alvarado Cámara
+POL-0477,39,Automóvil,11396.15,56.96,2023-11-10,2024-11-09,Activa,Sancho Canales-Blanes
+POL-0478,408,Hogar,83295.13,183.11,2025-07-10,2026-07-10,Vencida,Wilfredo Martin Belmonte
+POL-0479,8,Empresarial,41722.15,279.61,2025-06-20,2026-06-20,Cancelada,Tamara Ochoa Cañizares
+POL-0480,497,Vida,74296.83,79.53,2025-10-16,2026-10-16,Vencida,Ruperto de Piña
+POL-0481,466,Salud,98008.6,85.94,2025-04-23,2026-04-23,Activa,Teodoro Ernesto Téllez Ayuso
+POL-0482,11,Hogar,52694.4,296.78,2024-10-04,2025-10-04,Activa,Patricia Cuervo Perez
+POL-0483,102,Empresarial,73932.07,151.66,2024-04-11,2025-04-11,Activa,Sonia Fuster
+POL-0484,58,Hogar,29778.35,192.87,2024-11-16,2025-11-16,Activa,Susanita Soto Murcia
+POL-0485,452,Salud,82961.18,193.11,2025-06-18,2026-06-18,Activa,Etelvina Egea Tovar
+POL-0486,28,Salud,54735.1,47.0,2025-08-03,2026-08-03,Activa,Rufino Maxi Ugarte Bayona
+POL-0487,420,Vida,70748.79,84.64,2024-08-27,2025-08-27,Vencida,Fabiola Pina Gras
+POL-0488,263,Vida,29732.77,117.27,2024-06-30,2025-06-30,Activa,Gaspar Manjón Moya
+POL-0489,9,Empresarial,58318.84,70.68,2024-02-09,2025-02-08,Activa,Alma Reguera Vives
+POL-0490,407,Agrícola,74777.83,48.92,2023-12-23,2024-12-22,Vencida,Elisa Gutierrez Páez
+POL-0491,108,Empresarial,59200.25,28.07,2024-12-05,2025-12-05,Activa,Rosendo Calvet Cervantes
+POL-0492,318,Empresarial,65181.59,192.32,2023-11-13,2024-11-12,Activa,Hernán Torralba Matas
+POL-0493,306,Salud,53452.95,291.17,2025-07-06,2026-07-06,Activa,Oriana Crespi Bosch
+POL-0494,298,Automóvil,70815.06,251.52,2025-02-10,2026-02-10,Activa,Luisina Carrillo Mir
+POL-0495,60,Salud,57663.36,208.7,2025-04-03,2026-04-03,Activa,Paloma Susanita Vaquero Bayo
+POL-0496,7,Salud,69950.7,293.87,2024-12-10,2025-12-10,Activa,Dora Burgos Fortuny
+POL-0497,108,Automóvil,32952.9,250.68,2024-10-31,2025-10-31,Vencida,Amílcar Beltran Benavent
+POL-0498,345,Salud,41069.82,241.38,2023-12-10,2024-12-09,Vencida,Teófilo Quevedo
+POL-0499,135,Empresarial,67859.37,207.82,2024-07-02,2025-07-02,Activa,Cesar Rios España
+POL-0500,109,Vida,84854.07,92.97,2023-12-08,2024-12-07,Cancelada,Casemiro Rodrigo Ballester Montenegro
+POL-0501,395,Vida,63392.52,117.17,2024-10-21,2025-10-21,Activa,Baudelio Corral Barral
+POL-0502,414,Automóvil,97508.21,118.77,2024-12-09,2025-12-09,Activa,Selena María Dolores Contreras Acosta
+POL-0503,210,Empresarial,14014.62,90.6,2024-01-23,2025-01-22,Cancelada,Jesusa Alcalá Clavero
+POL-0504,277,Automóvil,15196.98,282.4,2025-02-13,2026-02-13,Activa,Hernando Molina Gomis
+POL-0505,370,Agrícola,27386.48,70.83,2024-06-28,2025-06-28,Activa,Borja Silva Carro
+POL-0506,55,Agrícola,94193.44,25.82,2024-01-24,2025-01-23,Cancelada,Manuela Roman Silva
+POL-0507,396,Empresarial,60390.1,143.29,2024-10-29,2025-10-29,Activa,Marcela Baeza Agullo
+POL-0508,456,Salud,98737.39,162.49,2024-08-25,2025-08-25,Activa,Vito Haro
+POL-0509,448,Hogar,67617.35,78.39,2024-02-28,2025-02-27,Activa,Fidela Burgos Roda
+POL-0510,283,Vida,36636.34,51.77,2024-03-22,2025-03-22,Activa,Cornelio Villa-Ávila
+POL-0511,227,Agrícola,70032.52,244.46,2023-11-05,2024-11-04,Activa,Isa Llanos Iglesia
+POL-0512,456,Agrícola,71518.16,267.98,2024-04-15,2025-04-15,Activa,Omar Villalonga-Ferreras
+POL-0513,389,Agrícola,25901.69,143.57,2025-07-12,2026-07-12,Activa,Petrona del Cerdá
+POL-0514,161,Salud,14597.33,141.74,2024-05-16,2025-05-16,Vencida,Arsenio Zamora Barrena
+POL-0515,180,Empresarial,82198.89,221.31,2024-09-25,2025-09-25,Cancelada,Cecilia Olivera Estévez
+POL-0516,269,Hogar,60736.32,236.13,2024-02-15,2025-02-14,Activa,Adelaida de Gracia
+POL-0517,363,Vida,8257.0,268.11,2025-02-13,2026-02-13,Activa,Ariel Lopez Perales
+POL-0518,441,Hogar,58226.14,236.06,2024-06-03,2025-06-03,Activa,Cecilia Villalonga Valle
+POL-0519,474,Vida,16252.77,117.42,2023-12-12,2024-12-11,Activa,Salomón del Torre
+POL-0520,57,Agrícola,69981.98,218.74,2024-11-25,2025-11-25,Activa,José Contreras Pla
+POL-0521,104,Vida,37871.49,66.48,2025-05-11,2026-05-11,Vencida,Alex Arribas
+POL-0522,238,Automóvil,34397.78,234.87,2023-12-26,2024-12-25,Activa,Abel del Guardia
+POL-0523,463,Agrícola,22409.66,115.37,2025-07-12,2026-07-12,Activa,Aurelio Bernal
+POL-0524,304,Hogar,51159.04,87.33,2023-12-19,2024-12-18,Activa,Basilio Huertas Borja
+POL-0525,30,Agrícola,31061.3,50.58,2024-04-07,2025-04-07,Cancelada,Isidoro Pancho Falcó Perales
+POL-0526,177,Salud,64404.99,206.54,2024-12-14,2025-12-14,Cancelada,Renata Casanovas Infante
+POL-0527,119,Salud,87019.28,47.16,2025-02-24,2026-02-24,Vencida,Marcio José Mari Blanco Velasco
+POL-0528,217,Agrícola,98766.74,160.96,2025-05-10,2026-05-10,Activa,Begoña Gaya Alba
+POL-0529,95,Hogar,15712.11,293.97,2024-02-25,2025-02-24,Activa,Santiago Calvo Escobar
+POL-0530,282,Hogar,88295.45,167.1,2025-01-09,2026-01-09,Activa,Casandra Quero Luna
+POL-0531,283,Agrícola,9426.65,191.86,2025-08-11,2026-08-11,Activa,Donato del Sáenz
+POL-0532,51,Hogar,35386.76,262.63,2025-01-30,2026-01-30,Activa,Clementina Hurtado Puig
+POL-0533,250,Automóvil,34204.2,170.95,2025-01-04,2026-01-04,Activa,América Clementina Fiol Ortiz
+POL-0534,145,Vida,74641.15,51.2,2023-10-31,2024-10-30,Activa,Nicanor Ignacio Borrás Giner
+POL-0535,313,Vida,98048.32,231.07,2025-09-30,2026-09-30,Vencida,Ofelia Maribel Campos Domingo
+POL-0536,469,Automóvil,26839.95,263.45,2025-05-26,2026-05-26,Activa,Jordi Ibañez Escamilla
+POL-0537,317,Empresarial,53675.95,92.42,2024-05-01,2025-05-01,Activa,Telmo Busquets Boada
+POL-0538,362,Empresarial,65573.33,114.39,2025-04-02,2026-04-02,Vencida,Palmira Pacheco Alcolea
+POL-0539,20,Automóvil,44903.08,82.8,2024-09-01,2025-09-01,Vencida,Palmira Novoa
+POL-0540,184,Hogar,89622.37,210.52,2024-11-10,2025-11-10,Activa,Rómulo Caparrós Gabaldón
+POL-0541,253,Automóvil,44100.76,187.71,2024-05-05,2025-05-05,Activa,Macaria Segura Valbuena
+POL-0542,136,Agrícola,11577.41,239.98,2025-08-11,2026-08-11,Vencida,Luna Calvo Coronado
+POL-0543,473,Empresarial,51908.67,50.22,2023-10-24,2024-10-23,Activa,Jaime Abascal Recio
+POL-0544,30,Empresarial,53146.69,139.62,2025-07-07,2026-07-07,Activa,Hermenegildo Arévalo Aguilar
+POL-0545,359,Hogar,18146.93,114.66,2024-01-31,2025-01-30,Vencida,León Piñeiro Diéguez
+POL-0546,260,Salud,34013.55,183.09,2024-06-03,2025-06-03,Cancelada,Tadeo Amor Iborra Sotelo
+POL-0547,24,Automóvil,44474.67,213.77,2024-10-29,2025-10-29,Activa,Noelia Pavón Almeida
+POL-0548,7,Empresarial,95227.05,33.85,2024-09-24,2025-09-24,Activa,Mar Yáñez Sánchez
+POL-0549,439,Hogar,50989.36,165.64,2024-11-29,2025-11-29,Activa,Balduino Duran
+POL-0550,321,Salud,26301.93,254.04,2024-08-24,2025-08-24,Activa,Narcisa Trujillo Tamayo
+POL-0551,387,Automóvil,82272.49,85.08,2025-10-11,2026-10-11,Activa,Jonatan del Cabanillas
+POL-0552,233,Agrícola,98431.65,189.13,2024-02-07,2025-02-06,Activa,Eleuterio Vicente Rojas
+POL-0553,310,Vida,46295.16,201.2,2024-01-18,2025-01-17,Activa,Ana Saavedra Valenciano
+POL-0554,420,Automóvil,93842.13,251.6,2024-07-05,2025-07-05,Activa,Alejandra Esteban Company
+POL-0555,481,Automóvil,98284.75,132.14,2025-01-26,2026-01-26,Vencida,Priscila Sobrino Quero
+POL-0556,293,Salud,44697.0,71.62,2024-08-09,2025-08-09,Activa,Eusebio Pozuelo Novoa
+POL-0557,85,Salud,26915.33,212.97,2024-08-15,2025-08-15,Vencida,Haroldo de Aznar
+POL-0558,490,Agrícola,84039.64,183.42,2024-08-14,2025-08-14,Activa,Rosenda Solano Parra
+POL-0559,194,Empresarial,81219.56,270.32,2024-05-27,2025-05-27,Activa,Jimena Crespi Anaya
+POL-0560,358,Salud,11538.22,297.24,2024-06-26,2025-06-26,Vencida,Adán Carmona Diéguez
+POL-0561,234,Salud,6484.81,212.08,2024-07-23,2025-07-23,Activa,Cándido Requena Angulo
+POL-0562,437,Salud,13316.0,211.82,2025-04-30,2026-04-30,Activa,Montserrat Castillo-Escribano
+POL-0563,161,Automóvil,76832.93,97.74,2024-07-17,2025-07-17,Activa,Oriana Tejedor Falcó
+POL-0564,175,Vida,88754.1,290.44,2024-06-14,2025-06-14,Activa,Rogelio Gaya Almazán
+POL-0565,317,Hogar,33535.24,57.05,2024-06-21,2025-06-21,Vencida,Ester Nadal Cruz
+POL-0566,187,Automóvil,28173.29,78.3,2024-09-28,2025-09-28,Activa,Roberto Duque Sancho
+POL-0567,187,Automóvil,20973.71,70.5,2024-04-15,2025-04-15,Activa,Edmundo Beltran Pablo
+POL-0568,325,Salud,35283.79,210.11,2023-11-11,2024-11-10,Activa,Nereida Amador Mata
+POL-0569,475,Hogar,37701.0,174.93,2025-08-13,2026-08-13,Cancelada,Anselmo Tur Diaz
+POL-0570,25,Hogar,5153.79,187.66,2025-06-27,2026-06-27,Activa,José Antonio Río Ramirez
+POL-0571,334,Automóvil,99028.2,160.77,2025-02-02,2026-02-02,Activa,Juanita Roca
+POL-0572,69,Empresarial,34899.15,265.14,2024-05-24,2025-05-24,Activa,Rogelio Wilfredo Leal Toledo
+POL-0573,439,Empresarial,10629.15,142.42,2024-08-08,2025-08-08,Activa,Urbano Morante Paniagua
+POL-0574,235,Salud,62823.46,135.57,2024-10-06,2025-10-06,Activa,Ximena Palacios Recio
+POL-0575,422,Salud,32985.51,84.58,2025-10-18,2026-10-18,Vencida,Mariana Reig Barceló
+POL-0576,349,Salud,58420.52,270.27,2024-02-19,2025-02-18,Activa,José Nogueira
+POL-0577,120,Agrícola,16726.9,33.58,2024-01-22,2025-01-21,Activa,Chuy Giralt Morales
+POL-0578,12,Empresarial,65299.78,184.14,2024-08-06,2025-08-06,Activa,Yolanda Alcolea
+POL-0579,416,Agrícola,12660.89,131.46,2024-11-02,2025-11-02,Vencida,Erasmo Carmona
+POL-0580,335,Hogar,34882.84,251.4,2024-07-12,2025-07-12,Activa,Patricia Nogués Bermúdez
+POL-0581,25,Vida,99143.36,111.49,2025-05-26,2026-05-26,Activa,Bautista Teobaldo Verdejo Roca
+POL-0582,421,Vida,77091.08,61.13,2025-02-02,2026-02-02,Activa,Ovidio Baena Cervantes
+POL-0583,331,Empresarial,57560.59,25.74,2025-05-20,2026-05-20,Activa,Esmeralda Gibert Palomino
+POL-0584,15,Agrícola,5157.91,140.83,2025-07-28,2026-07-28,Activa,Marcela Fernandez Lucena
+POL-0585,84,Vida,43625.96,106.1,2024-02-16,2025-02-15,Vencida,Aroa Verdugo Font
+POL-0586,102,Vida,35093.0,82.1,2023-11-28,2024-11-27,Vencida,Erasmo Santamaria Nogués
+POL-0587,426,Hogar,74213.13,294.06,2024-07-11,2025-07-11,Activa,Rodrigo Gallo Agullo
+POL-0588,279,Empresarial,65486.51,206.87,2023-12-09,2024-12-08,Activa,Celestina Cánovas Guillen
+POL-0589,425,Automóvil,36561.55,211.84,2025-01-23,2026-01-23,Cancelada,Eutropio Ribas Salgado
+POL-0590,459,Vida,57645.9,199.43,2025-07-31,2026-07-31,Activa,Adela Bertrán Lorenzo
+POL-0591,486,Automóvil,8617.41,107.54,2024-07-02,2025-07-02,Activa,Paulina Jaume Pinedo
+POL-0592,195,Automóvil,91219.19,56.74,2025-07-23,2026-07-23,Activa,Manolo del Cifuentes
+POL-0593,491,Salud,18916.41,288.64,2024-01-03,2025-01-02,Activa,Rosalva Merino Moliner
+POL-0594,443,Vida,71051.63,97.46,2024-11-18,2025-11-18,Activa,Geraldo Benavent Torrent
+POL-0595,229,Agrícola,60879.38,63.8,2023-11-16,2024-11-15,Activa,Úrsula Arcos Barrios
+POL-0596,348,Automóvil,95445.59,177.05,2024-11-20,2025-11-20,Activa,Baldomero Molins Barriga
+POL-0597,217,Salud,82461.3,165.5,2024-07-16,2025-07-16,Activa,Graciela Robles-Huerta
+POL-0598,418,Hogar,62469.97,117.5,2024-03-15,2025-03-15,Activa,Raquel Vara-Gallo
+POL-0599,489,Vida,58997.25,101.66,2024-12-12,2025-12-12,Activa,Ildefonso de Cerdá
+POL-0600,480,Automóvil,61614.36,214.62,2025-05-17,2026-05-17,Vencida,Teresa Barrera Donoso
+POL-0601,50,Empresarial,38375.55,30.8,2025-01-08,2026-01-08,Activa,Baltasar Pedro
+POL-0602,163,Hogar,50643.34,83.03,2024-10-29,2025-10-29,Activa,Mateo Falcón
+POL-0603,79,Hogar,28878.51,74.8,2024-07-13,2025-07-13,Activa,Isabela Pardo
+POL-0604,168,Empresarial,17618.28,261.9,2024-07-25,2025-07-25,Vencida,Flora Miguel
+POL-0605,476,Vida,12500.5,102.33,2023-11-19,2024-11-18,Activa,Fátima Aller Guerrero
+POL-0606,126,Hogar,68890.53,154.02,2025-07-24,2026-07-24,Activa,Esperanza Rios-Bauzà
+POL-0607,65,Vida,37057.81,290.94,2023-11-30,2024-11-29,Cancelada,Isaías del Cámara
+POL-0608,78,Salud,8057.42,288.51,2025-02-11,2026-02-11,Activa,Moreno Ramirez Sáez
+POL-0609,424,Agrícola,73914.82,189.82,2024-06-01,2025-06-01,Activa,Jenaro Benavent Velázquez
+POL-0610,446,Vida,93508.98,208.62,2024-06-21,2025-06-21,Activa,Chus Folch Pla
+POL-0611,258,Vida,77963.35,56.24,2024-05-23,2025-05-23,Activa,Victoria del Daza
+POL-0612,216,Agrícola,9602.38,104.89,2024-06-03,2025-06-03,Activa,Martina Manzano Vicens
+POL-0613,341,Agrícola,20176.2,176.11,2025-04-04,2026-04-04,Activa,Toribio Porcel Codina
+POL-0614,1,Vida,18904.29,260.22,2024-05-05,2025-05-05,Cancelada,Serafina Landa-Martín
+POL-0615,61,Vida,63917.72,159.91,2024-03-08,2025-03-08,Activa,Eladio del Palmer
+POL-0616,423,Empresarial,50364.55,205.13,2025-06-07,2026-06-07,Activa,Amalia Coca-Huerta
+POL-0617,51,Empresarial,7014.19,89.99,2024-09-18,2025-09-18,Activa,Kike Yago Alcázar Valle
+POL-0618,150,Salud,13859.14,244.76,2024-01-24,2025-01-23,Activa,Pía Collado Lobato
+POL-0619,4,Empresarial,32739.29,29.14,2023-12-14,2024-12-13,Vencida,Aureliano Coronado Arnaiz
+POL-0620,202,Vida,8797.09,101.76,2024-01-04,2025-01-03,Activa,Ángel Toro Castilla
+POL-0621,206,Hogar,64719.38,106.68,2024-04-16,2025-04-16,Cancelada,Edelmiro Marciano Arnal Llano
+POL-0622,123,Hogar,7562.16,47.2,2024-09-09,2025-09-09,Activa,Íñigo Guerra-Amat
+POL-0623,288,Automóvil,75663.58,287.86,2024-09-14,2025-09-14,Vencida,Anselmo Morales Mancebo
+POL-0624,80,Salud,46913.82,80.76,2024-04-30,2025-04-30,Activa,Anna Girón-Tejada
+POL-0625,482,Automóvil,88150.47,258.31,2025-06-11,2026-06-11,Activa,Epifanio de Verdejo
+POL-0626,195,Salud,39646.39,109.31,2025-03-15,2026-03-15,Activa,Prudencio Díez Prieto
+POL-0627,196,Automóvil,30799.53,136.03,2023-12-28,2024-12-27,Activa,Dafne Segovia
+POL-0628,159,Hogar,80318.46,274.22,2024-07-22,2025-07-22,Activa,José Luis Pelayo Colomer
+POL-0629,419,Hogar,76080.49,63.06,2024-10-10,2025-10-10,Activa,Fabiola Castells Adadia
+POL-0630,375,Empresarial,43887.2,200.05,2024-05-31,2025-05-31,Vencida,Calixta Escalona-Lucas
+POL-0631,345,Agrícola,82582.81,48.58,2024-02-05,2025-02-04,Activa,Pablo Adán Molina
+POL-0632,405,Agrícola,96871.17,91.78,2024-09-08,2025-09-08,Activa,Jorge Hurtado Salvador
+POL-0633,212,Agrícola,39276.93,41.53,2023-11-26,2024-11-25,Activa,Graciano Elías Luque
+POL-0634,7,Vida,94294.83,119.31,2024-07-20,2025-07-20,Activa,Prudencia Monreal-Escamilla
+POL-0635,136,Agrícola,12177.63,291.81,2025-09-20,2026-09-20,Activa,Pancho Ibañez
+POL-0636,276,Automóvil,22829.6,163.92,2024-09-03,2025-09-03,Activa,Paloma de Albero
+POL-0637,233,Vida,95741.86,190.64,2024-01-12,2025-01-11,Vencida,Viviana Porcel Amat
+POL-0638,226,Empresarial,38478.45,219.96,2025-08-08,2026-08-08,Activa,Buenaventura Vélez Reyes
+POL-0639,300,Empresarial,75606.81,253.97,2024-07-02,2025-07-02,Activa,Paco Abilio Lozano Valverde
+POL-0640,271,Agrícola,69052.07,223.34,2024-07-12,2025-07-12,Activa,Marcelino Calzada Miró
+POL-0641,108,Salud,42606.66,164.76,2024-04-01,2025-04-01,Activa,Mariana del Navas
+POL-0642,158,Hogar,92140.49,95.05,2025-08-26,2026-08-26,Vencida,Primitiva Alegre Ribas
+POL-0643,52,Vida,37875.55,277.95,2024-11-17,2025-11-17,Activa,Germán Valenciano Uría
+POL-0644,114,Salud,53753.02,199.46,2023-10-29,2024-10-28,Activa,Anna Huerta-Blanca
+POL-0645,451,Agrícola,13874.26,153.55,2024-06-23,2025-06-23,Vencida,Julio César Arco-Garzón
+POL-0646,31,Automóvil,52470.16,75.03,2025-06-07,2026-06-07,Activa,Celestino Núñez
+POL-0647,175,Vida,93790.55,133.62,2025-03-05,2026-03-05,Activa,Cristóbal Ledesma Coca
+POL-0648,226,Salud,63906.48,116.72,2024-07-05,2025-07-05,Activa,Eutimio Gutierrez Gilabert
+POL-0649,450,Automóvil,33964.34,147.51,2024-06-10,2025-06-10,Activa,Matías Rey-Conde
+POL-0650,67,Agrícola,84754.26,67.84,2025-06-24,2026-06-24,Activa,León Cases Calzada
+POL-0651,111,Automóvil,75628.03,89.26,2024-11-06,2025-11-06,Activa,Julia Nogueira Cortes
+POL-0652,30,Salud,29870.35,214.27,2024-05-03,2025-05-03,Activa,Bernardo Carreras Hierro
+POL-0653,440,Vida,28272.95,157.12,2025-08-17,2026-08-17,Activa,Genoveva Carballo-Briones
+POL-0654,244,Hogar,92532.55,97.13,2023-11-12,2024-11-11,Activa,Julieta Coronado Mariño
+POL-0655,288,Automóvil,80920.27,175.51,2025-05-25,2026-05-25,Activa,Isaura Juana Mariño Fernandez
+POL-0656,348,Agrícola,86519.63,244.01,2024-06-14,2025-06-14,Cancelada,Roxana Céspedes Macías
+POL-0657,4,Vida,79804.1,156.89,2024-06-28,2025-06-28,Vencida,María Teresa Infante
+POL-0658,390,Salud,51980.9,239.59,2024-08-16,2025-08-16,Vencida,Ariel Josué Barros Romero
+POL-0659,58,Automóvil,5977.32,246.03,2024-03-05,2025-03-05,Activa,Ignacia Lledó Roca
+POL-0660,34,Automóvil,64052.6,125.45,2025-07-04,2026-07-04,Activa,Luisina Luna Caro
+POL-0661,338,Empresarial,13170.92,215.08,2024-02-27,2025-02-26,Cancelada,Felicia Galván-Gonzalo
+POL-0662,196,Hogar,63924.34,227.54,2024-07-08,2025-07-08,Activa,Consuela Sarabia Marti
+POL-0663,119,Salud,26614.86,237.21,2025-02-15,2026-02-15,Activa,Aurelio de Borrell
+POL-0664,101,Empresarial,72840.51,152.66,2024-03-01,2025-03-01,Activa,Santiago Anaya Matas
+POL-0665,412,Hogar,68708.25,30.51,2024-10-13,2025-10-13,Activa,Urbano Águila-Ledesma
+POL-0666,472,Agrícola,53091.23,80.14,2025-04-15,2026-04-15,Activa,Esperanza Barranco Aguirre
+POL-0667,293,Hogar,23717.48,282.76,2024-12-11,2025-12-11,Activa,Azahar Canet Herranz
+POL-0668,100,Empresarial,99351.13,133.11,2025-10-05,2026-10-05,Activa,Plácido Apolinar Salvà Pinto
+POL-0669,402,Empresarial,19165.79,289.74,2024-06-26,2025-06-26,Activa,Rafaela Suárez Albero
+POL-0670,314,Hogar,23044.87,66.81,2025-06-16,2026-06-16,Activa,Hernán Campoy Escrivá
+POL-0671,299,Agrícola,13762.54,217.98,2025-06-13,2026-06-13,Cancelada,Galo Moll Calzada
+POL-0672,84,Hogar,59360.15,274.27,2024-06-08,2025-06-08,Activa,Luna Santamaria Salamanca
+POL-0673,56,Agrícola,40954.84,251.28,2025-09-23,2026-09-23,Activa,Sara Arnal Ripoll
+POL-0674,481,Empresarial,70516.59,105.61,2023-12-11,2024-12-10,Activa,Teófila Viña-Arnau
+POL-0675,133,Automóvil,56867.15,58.6,2024-08-31,2025-08-31,Activa,Luna Palomar Jara
+POL-0676,14,Agrícola,17317.02,102.62,2025-09-14,2026-09-14,Vencida,Víctor Pellicer
+POL-0677,240,Vida,36482.58,132.33,2025-10-04,2026-10-04,Activa,Abigaíl Gabaldón Nadal
+POL-0678,138,Agrícola,86347.97,180.66,2024-01-23,2025-01-22,Activa,Felix Aramburu Alegria
+POL-0679,219,Automóvil,21477.13,134.76,2025-08-28,2026-08-28,Activa,Gerónimo de Huerta
+POL-0680,275,Empresarial,18046.38,226.77,2025-10-06,2026-10-06,Activa,Carmen Salmerón Porcel
+POL-0681,10,Salud,68576.75,105.25,2024-12-23,2025-12-23,Activa,Albino del Cobo
+POL-0682,379,Automóvil,15836.62,219.47,2024-01-23,2025-01-22,Activa,Ildefonso Manzanares
+POL-0683,315,Vida,63432.19,72.2,2025-05-01,2026-05-01,Activa,Isidro Sandalio Plaza Ropero
+POL-0684,257,Vida,89241.74,149.63,2025-02-15,2026-02-15,Activa,Rosendo Iglesia Alberola
+POL-0685,325,Automóvil,95136.27,274.76,2024-08-20,2025-08-20,Activa,Almudena Rivera Rios
+POL-0686,459,Vida,57517.77,277.39,2023-12-15,2024-12-14,Activa,Jeremías del Cánovas
+POL-0687,307,Automóvil,68691.84,250.52,2024-11-07,2025-11-07,Activa,Hernando del Pedro
+POL-0688,493,Empresarial,26553.04,157.03,2025-03-29,2026-03-29,Activa,Esther Barragán Galan
+POL-0689,30,Hogar,72280.94,223.47,2025-06-26,2026-06-26,Activa,Delfina de Manso
+POL-0690,138,Automóvil,65751.27,198.19,2025-01-04,2026-01-04,Activa,Ligia Huguet Baeza
+POL-0691,119,Hogar,65496.24,228.83,2024-01-27,2025-01-26,Activa,Fortunata del Aranda
+POL-0692,194,Hogar,69621.56,240.76,2025-04-26,2026-04-26,Vencida,Martin de Casals
+POL-0693,206,Vida,85498.27,48.3,2023-10-30,2024-10-29,Activa,Chema Armando Arnaiz Segura
+POL-0694,298,Hogar,72942.99,290.67,2023-12-04,2024-12-03,Activa,Isaías Heredia Soto
+POL-0695,466,Salud,74946.22,132.17,2025-08-28,2026-08-28,Vencida,América Patiño Nadal
+POL-0696,432,Hogar,35388.75,119.59,2025-09-11,2026-09-11,Activa,Charo Rico
+POL-0697,107,Automóvil,26236.69,140.68,2023-10-22,2024-10-21,Activa,Lázaro Amores-Bolaños
+POL-0698,379,Salud,99776.21,289.16,2024-05-17,2025-05-17,Activa,Edelmiro Álvaro
+POL-0699,357,Empresarial,63779.01,146.89,2025-02-07,2026-02-07,Vencida,Sofía Collado Paredes
+POL-0700,357,Vida,74436.61,154.26,2025-02-25,2026-02-25,Activa,Herminia del Díaz
+POL-0701,56,Vida,76717.38,97.81,2024-03-14,2025-03-14,Activa,Pelayo Carreras Puerta
+POL-0702,180,Hogar,56219.69,58.16,2025-07-21,2026-07-21,Vencida,Fabián Bernat Colom
+POL-0703,442,Salud,46685.69,233.23,2024-09-04,2025-09-04,Vencida,Sosimo Galan Ferrera
+POL-0704,107,Hogar,8377.42,47.9,2024-01-18,2025-01-17,Vencida,Rafaela Angelita Pera Morales
+POL-0705,53,Salud,32307.68,112.08,2024-08-19,2025-08-19,Activa,Manola Morán Arrieta
+POL-0706,481,Empresarial,28968.38,237.62,2025-10-09,2026-10-09,Activa,Chus Uribe Redondo
+POL-0707,369,Automóvil,80109.58,242.48,2024-11-02,2025-11-02,Activa,Carolina del Lillo
+POL-0708,233,Salud,83652.69,237.97,2023-10-23,2024-10-22,Activa,Daniel Solana
+POL-0709,432,Empresarial,92292.29,80.79,2023-11-26,2024-11-25,Activa,Rosario Llorens Galván
+POL-0710,166,Hogar,61567.51,273.14,2024-11-21,2025-11-21,Activa,María Ángeles Clementina Cárdenas Segura
+POL-0711,369,Agrícola,21947.92,69.34,2024-01-17,2025-01-16,Vencida,Eloy Vélez-Jódar
+POL-0712,199,Vida,52386.5,40.52,2024-03-11,2025-03-11,Activa,Federico Piña Piñol
+POL-0713,312,Agrícola,27430.16,85.28,2024-11-17,2025-11-17,Cancelada,Jafet Otero Guerrero
+POL-0714,216,Empresarial,8728.58,84.02,2023-11-27,2024-11-26,Activa,Victor Meléndez Casas
+POL-0715,440,Vida,53037.83,198.19,2024-03-14,2025-03-14,Activa,Eva María Ximena Iñiguez Blasco
+POL-0716,17,Agrícola,94047.43,211.48,2025-03-15,2026-03-15,Activa,Alejo Pérez Espada
+POL-0717,187,Automóvil,52622.99,102.36,2025-05-01,2026-05-01,Activa,Dominga Dolores Leiva Carrasco
+POL-0718,128,Hogar,14053.62,216.82,2024-04-01,2025-04-01,Activa,Benito del Barceló
+POL-0719,411,Empresarial,6446.89,119.72,2024-06-12,2025-06-12,Activa,Flavia Roldan
+POL-0720,354,Empresarial,39264.43,207.69,2024-09-23,2025-09-23,Activa,Purificación Abella Armengol
+POL-0721,160,Empresarial,56692.51,26.71,2025-07-07,2026-07-07,Activa,Rafa Perales
+POL-0722,144,Agrícola,87054.22,115.44,2025-08-21,2026-08-21,Activa,Loreto del Gordillo
+POL-0723,265,Agrícola,31730.07,109.76,2025-10-10,2026-10-10,Activa,Amor Julieta Carmona Sebastián
+POL-0724,133,Salud,75382.23,57.46,2025-04-04,2026-04-04,Activa,Manuel de Cortina
+POL-0725,391,Vida,5419.37,235.03,2024-10-15,2025-10-15,Activa,Inés Paz Boix Codina
+POL-0726,477,Vida,16512.86,248.6,2024-11-23,2025-11-23,Activa,Edelmira Ferreras Franco
+POL-0727,210,Salud,22488.85,237.53,2025-03-15,2026-03-15,Activa,Carlos Escolano Martínez
+POL-0728,407,Hogar,70102.27,166.24,2024-10-23,2025-10-23,Vencida,Morena Quevedo Barón
+POL-0729,143,Agrícola,12396.98,205.33,2024-11-17,2025-11-17,Activa,Efraín Lastra-Ponce
+POL-0730,53,Agrícola,69053.64,120.31,2023-12-03,2024-12-02,Activa,Eustaquio Carrión Alberdi
+POL-0731,464,Salud,61171.37,232.15,2024-10-11,2025-10-11,Vencida,Joaquín Gelabert Andreu
+POL-0732,443,Salud,35935.62,218.11,2024-03-01,2025-03-01,Activa,Espiridión Pánfilo Adán Hervás
+POL-0733,189,Empresarial,94318.74,231.92,2025-02-07,2026-02-07,Activa,Feliciano Rozas Reig
+POL-0734,205,Salud,31513.6,73.26,2023-10-30,2024-10-29,Cancelada,Bernarda Ramón
+POL-0735,471,Agrícola,47047.52,185.66,2024-04-02,2025-04-02,Activa,Prudencio Rebollo
+POL-0736,59,Empresarial,92789.59,299.68,2025-01-17,2026-01-17,Vencida,Eloy Barba Romeu
+POL-0737,325,Vida,76185.44,188.09,2024-11-19,2025-11-19,Activa,Guiomar Villanueva
+POL-0738,52,Hogar,60351.21,253.38,2023-10-30,2024-10-29,Activa,Ciríaco Cesar Nieto Carvajal
+POL-0739,81,Hogar,42510.53,254.77,2024-12-13,2025-12-13,Activa,Mateo Arnaiz Riba
+POL-0740,419,Empresarial,95313.15,182.05,2025-03-19,2026-03-19,Vencida,Rubén Solé-Santiago
+POL-0741,5,Vida,99750.86,112.2,2025-02-21,2026-02-21,Activa,Apolonia Morera-Arnaiz
+POL-0742,369,Automóvil,60502.08,224.48,2024-04-06,2025-04-06,Vencida,Lourdes Amigó-Coello
+POL-0743,235,Hogar,12601.49,197.91,2025-03-21,2026-03-21,Activa,Bienvenida Melero Molins
+POL-0744,158,Vida,51970.22,164.53,2024-04-29,2025-04-29,Vencida,Merche Llorente
+POL-0745,220,Agrícola,39241.42,232.32,2025-06-23,2026-06-23,Activa,Candelario Pablo Lluch Villa
+POL-0746,28,Agrícola,11259.23,135.34,2023-12-03,2024-12-02,Activa,Haroldo Valle Pacheco
+POL-0747,429,Salud,64297.73,38.01,2024-11-10,2025-11-10,Activa,Marta Vazquez Nogueira
+POL-0748,457,Agrícola,16298.03,216.32,2024-03-22,2025-03-22,Activa,Raquel de Martín
+POL-0749,35,Agrícola,40463.47,53.39,2025-02-20,2026-02-20,Cancelada,Juan Luis Páez Anguita
+POL-0750,300,Vida,48061.06,185.62,2024-01-23,2025-01-22,Activa,Marcos Adalberto Cañas Español
+POL-0751,357,Vida,76449.95,294.63,2024-01-03,2025-01-02,Vencida,Irene Palomino Isern
+POL-0752,170,Empresarial,16295.2,287.77,2024-01-29,2025-01-28,Activa,Patricia Nuñez León
+POL-0753,214,Salud,63498.3,232.41,2025-05-05,2026-05-05,Activa,Angelina Nayara Reguera Pera
+POL-0754,282,Empresarial,52724.07,240.01,2024-01-31,2025-01-30,Activa,Emperatriz Bautista Girón
+POL-0755,8,Hogar,70679.38,174.14,2025-06-15,2026-06-15,Activa,Matilde Benet Ariza
+POL-0756,401,Hogar,32577.14,133.07,2024-07-02,2025-07-02,Activa,Félix Tejero Flores
+POL-0757,307,Hogar,79475.11,43.13,2025-08-18,2026-08-18,Vencida,Samu de Borrell
+POL-0758,300,Hogar,97103.96,237.71,2024-10-01,2025-10-01,Activa,Juan Manuel Prado Bilbao
+POL-0759,213,Automóvil,72723.77,132.55,2024-06-16,2025-06-16,Activa,Joaquín Solé Alcaraz
+POL-0760,68,Automóvil,51252.65,269.5,2024-01-27,2025-01-26,Vencida,Marina Paredes Rubio
+POL-0761,14,Vida,78315.58,179.99,2023-10-31,2024-10-30,Vencida,Carina Espinosa Ros
+POL-0762,154,Hogar,16219.09,29.98,2024-01-02,2025-01-01,Activa,Álvaro Gilabert Montalbán
+POL-0763,207,Automóvil,59401.69,88.29,2024-04-15,2025-04-15,Cancelada,Carlos de Beltran
+POL-0764,347,Empresarial,37994.63,182.61,2024-07-05,2025-07-05,Activa,Abraham Villa Pastor
+POL-0765,105,Agrícola,71417.53,232.56,2024-11-29,2025-11-29,Activa,Pedro Caballero Plana
+POL-0766,248,Agrícola,78651.6,165.69,2024-04-07,2025-04-07,Activa,Victor Manuel Alcalá Palomino
+POL-0767,430,Agrícola,27922.6,124.74,2024-05-13,2025-05-13,Activa,Ignacia Haro Martí
+POL-0768,187,Agrícola,80268.16,41.51,2024-01-11,2025-01-10,Vencida,Quirino Marquez Cuesta
+POL-0769,55,Hogar,40146.9,139.72,2025-10-20,2026-10-20,Activa,Evangelina Reyes
+POL-0770,165,Automóvil,97885.55,40.7,2024-11-17,2025-11-17,Activa,Gerónimo Casanova Segarra
+POL-0771,417,Agrícola,66031.44,32.44,2023-10-29,2024-10-28,Activa,Amador Ortiz Rozas
+POL-0772,473,Hogar,93637.08,193.34,2024-03-14,2025-03-14,Activa,Íñigo de Ruano
+POL-0773,10,Automóvil,5195.21,83.6,2024-01-17,2025-01-16,Vencida,Cándida del Luna
+POL-0774,97,Hogar,80943.52,83.46,2024-05-29,2025-05-29,Activa,Calixto Aguilera Llorente
+POL-0775,394,Salud,15449.97,77.05,2024-07-20,2025-07-20,Activa,Marisa Manzanares Barral
+POL-0776,103,Vida,9295.05,46.01,2024-11-30,2025-11-30,Activa,Aurelio del Abad
+POL-0777,382,Vida,36564.92,106.59,2024-10-04,2025-10-04,Activa,Regina Ledesma Ibáñez
+POL-0778,393,Empresarial,32105.74,62.25,2024-08-02,2025-08-02,Activa,Leopoldo Miguel Vaquero
+POL-0779,464,Agrícola,76063.22,149.98,2024-06-26,2025-06-26,Activa,Aura Ríos-Sales
+POL-0780,463,Agrícola,95017.45,214.57,2023-12-02,2024-12-01,Activa,Áurea Lasa
+POL-0781,421,Empresarial,46764.1,84.07,2023-11-22,2024-11-21,Activa,Ainoa Sosa Palacios
+POL-0782,195,Hogar,30119.01,203.61,2024-03-01,2025-03-01,Activa,Eliana Tamarit Alemany
+POL-0783,17,Agrícola,98410.36,226.95,2025-03-05,2026-03-05,Activa,Brígida Palomar Palomo
+POL-0784,378,Vida,77313.36,93.72,2024-05-19,2025-05-19,Activa,Ainara Benavides Acosta
+POL-0785,347,Empresarial,39925.01,68.28,2025-02-14,2026-02-14,Activa,Florentino Blazquez Peña
+POL-0786,281,Salud,98470.32,134.61,2025-05-11,2026-05-11,Cancelada,Arturo Adelardo Ramis Osuna
+POL-0787,270,Salud,83554.96,259.91,2023-11-03,2024-11-02,Activa,Hernando Barrena Bejarano
+POL-0788,26,Salud,75498.03,131.31,2024-12-09,2025-12-09,Activa,Dolores Hierro Guardiola
+POL-0789,50,Agrícola,81083.42,152.63,2024-07-20,2025-07-20,Activa,Natalia Viviana Parra Prado
+POL-0790,94,Empresarial,83185.23,38.22,2025-05-17,2026-05-17,Activa,Bautista Casals
+POL-0791,416,Salud,71385.64,247.96,2025-06-29,2026-06-29,Activa,Alexandra Santamaría Carrión
+POL-0792,105,Vida,27874.64,36.05,2024-05-27,2025-05-27,Activa,Miguel Ángel Manzano
+POL-0793,464,Automóvil,38245.43,267.46,2023-12-12,2024-12-11,Activa,Camila Graciana Vergara Ferrández
+POL-0794,249,Agrícola,54574.36,283.94,2023-12-30,2024-12-29,Vencida,Hilario Figuerola Navas
+POL-0795,26,Agrícola,52663.92,77.51,2025-06-01,2026-06-01,Activa,Graciela Maestre-Gracia
+POL-0796,379,Salud,10860.44,260.66,2023-12-14,2024-12-13,Cancelada,Claudia Rebollo
+POL-0797,456,Automóvil,62026.03,188.96,2024-02-14,2025-02-13,Activa,Eleuterio Páez Arregui
+POL-0798,194,Empresarial,88462.73,236.65,2025-08-21,2026-08-21,Vencida,María Manuela Font Estévez
+POL-0799,411,Vida,93267.52,131.74,2024-09-15,2025-09-15,Activa,Teodoro Arnal Pla
+POL-0800,54,Hogar,49197.5,106.42,2023-11-23,2024-11-22,Activa,Bernarda Miró Lopez
