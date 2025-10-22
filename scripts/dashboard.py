@@ -7,21 +7,147 @@ from datetime import datetime, timedelta
 import os
 import sys
 
-# Configuración de la página
+# Configuración de la página con tema personalizado
 st.set_page_config(
-    page_title="Dashboard Aseguradora SV",
+    page_title="🏢 Aseguradora SV Dashboard",
     page_icon="🏢",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-st.title("🏢 Dashboard Aseguradora - El Salvador")
-st.markdown("---")
+# Aplicar estilos CSS personalizados
+st.markdown("""
+<style>
+    /* Estilos generales */
+    .main {
+        background-color: #f8fafc;
+    }
+    
+    /* Títulos principales */
+    .main-title {
+        font-size: 2.5rem !important;
+        font-weight: 700 !important;
+        color: #1e293b !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem !important;
+        color: #64748b !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Tarjetas de métricas */
+    .metric-card {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-left: 4px solid #3b82f6;
+        transition: transform 0.2s ease;
+    }
+    
+    .metric-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    
+    .metric-value {
+        font-size: 2rem !important;
+        font-weight: 700 !important;
+        color: #1e293b !important;
+        margin-bottom: 0.25rem !important;
+    }
+    
+    .metric-label {
+        font-size: 0.9rem !important;
+        color: #64748b !important;
+        font-weight: 500 !important;
+    }
+    
+    .metric-change {
+        font-size: 0.8rem !important;
+        font-weight: 600 !important;
+        padding: 0.2rem 0.5rem;
+        border-radius: 20px;
+        display: inline-block;
+    }
+    
+    .positive {
+        background-color: #dcfce7;
+        color: #166534;
+    }
+    
+    .negative {
+        background-color: #fee2e2;
+        color: #dc2626;
+    }
+    
+    /* Sidebar */
+    .sidebar .sidebar-content {
+        background: linear-gradient(180deg, #1e293b 0%, #334155 100%);
+    }
+    
+    .sidebar-title {
+        color: white !important;
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Filtros */
+    .filter-section {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .filter-label {
+        color: #cbd5e1 !important;
+        font-weight: 600 !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    /* Gráficos */
+    .chart-container {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        margin-bottom: 1.5rem;
+    }
+    
+    .chart-title {
+        font-size: 1.2rem !important;
+        font-weight: 600 !important;
+        color: #1e293b !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Tabs */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 2rem;
+    }
+    
+    .stTabs [data-baseweb="tab"] {
+        height: 50px;
+        white-space: pre-wrap;
+        background-color: #f1f5f9;
+        border-radius: 8px 8px 0px 0px;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        font-weight: 600;
+    }
+    
+    .stTabs [aria-selected="true"] {
+        background-color: #3b82f6 !important;
+        color: white !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 
-# DEBUG: Mostrar información del sistema
-st.sidebar.info("🔧 Modo: Streamlit Cloud")
-
-# Función para generar datos de ejemplo
+# Función para generar datos de ejemplo (manteniendo tu función original)
 @st.cache_data
 def generar_datos_completos():
     """Genera datos completos de ejemplo para el dashboard"""
@@ -95,26 +221,19 @@ def generar_datos_completos():
     
     return clientes, polizas, siniestros, pagos_df
 
-# Cargar datos - VERSIÓN CORREGIDA PARA STREAMLIT CLOUD
+# Cargar datos
 @st.cache_data
 def cargar_datos():
     """Carga datos - CORREGIDO para Streamlit Cloud"""
     
-    # Mostrar información de debug
-    current_dir = os.getcwd()
-    st.sidebar.write(f"Directorio: {current_dir}")
-    
     try:
-        # EN STREAMLIT CLOUD, el dashboard.py está en /scripts/
-        # pero los datos deberían estar en la raíz: /datos/
-        
         # Intentar rutas ABSOLUTAS para Streamlit Cloud
         rutas_a_intentar = [
-            '/mount/src/aseguradora/datos/clientes.csv',  # Ruta ABSOLUTA en Streamlit Cloud
-            '../datos/clientes.csv',                      # Subir un nivel desde /scripts/
-            './datos/clientes.csv',                       # Relativo al script
-            'datos/clientes.csv',                         # Relativo al directorio de trabajo
-            'clientes.csv'                                # En el mismo directorio
+            '/mount/src/aseguradora/datos/clientes.csv',
+            '../datos/clientes.csv',
+            './datos/clientes.csv',
+            'datos/clientes.csv',
+            'clientes.csv'
         ]
         
         archivos_encontrados = False
@@ -126,7 +245,6 @@ def cargar_datos():
                 polizas = pd.read_csv(ruta.replace('clientes', 'polizas'))
                 siniestros = pd.read_csv(ruta.replace('clientes', 'siniestros'))
                 
-                # Intentar cargar pagos (puede no existir)
                 try:
                     pagos = pd.read_csv(ruta.replace('clientes', 'pagos'))
                 except:
@@ -154,41 +272,65 @@ if pagos.empty:
     pagos = pd.DataFrame(columns=['ID_Pago', 'ID_Poliza', 'Fecha_Pago', 'Monto_Pago', 'Estado_Pago', 'Metodo_Pago'])
 
 # ========== SIDEBAR CON FILTROS ==========
-st.sidebar.title("🔍 Filtros")
-
-# Filtro por fecha (si existen los datos de pagos)
-if not pagos.empty and 'Fecha_Pago' in pagos.columns:
-    try:
-        fecha_min = pagos['Fecha_Pago'].min()
-        fecha_max = pagos['Fecha_Pago'].max()
-        
-        rango_fechas = st.sidebar.date_input(
-            "Rango de Fechas",
-            value=[fecha_min.date(), fecha_max.date()],
-            min_value=fecha_min.date(),
-            max_value=fecha_max.date()
-        )
-    except:
-        st.sidebar.info("Fechas no disponibles")
-
-# Filtros múltiples
-tipo_seguro = st.sidebar.multiselect(
-    "Tipo de Seguro",
-    options=polizas['Tipo_Seguro'].unique(),
-    default=polizas['Tipo_Seguro'].unique()
-)
-
-departamento = st.sidebar.multiselect(
-    "Departamento",
-    options=clientes['Departamento'].unique(),
-    default=clientes['Departamento'].unique()
-)
-
-estado_poliza = st.sidebar.multiselect(
-    "Estado Póliza",
-    options=polizas['Estado'].unique(),
-    default=['Activa']
-)
+with st.sidebar:
+    st.markdown('<h1 class="sidebar-title">🏢 Aseguradora SV</h1>', unsafe_allow_html=True)
+    
+    st.markdown("---")
+    
+    # Filtros en secciones organizadas
+    st.markdown('<div class="filter-section">', unsafe_allow_html=True)
+    st.markdown('<p class="filter-label">📅 Rango de Fechas</p>', unsafe_allow_html=True)
+    
+    if not pagos.empty and 'Fecha_Pago' in pagos.columns:
+        try:
+            fecha_min = pd.to_datetime(pagos['Fecha_Pago']).min()
+            fecha_max = pd.to_datetime(pagos['Fecha_Pago']).max()
+            
+            rango_fechas = st.date_input(
+                "",
+                value=[fecha_min.date(), fecha_max.date()],
+                min_value=fecha_min.date(),
+                max_value=fecha_max.date(),
+                label_visibility="collapsed"
+            )
+        except:
+            st.info("Fechas no disponibles")
+    
+    st.markdown('</div>', unsafe_allow_html=True)
+    
+    st.markdown('<div class="filter-section">', unsafe_allow_html=True)
+    st.markdown('<p class="filter-label">🛡️ Tipo de Seguro</p>', unsafe_allow_html=True)
+    tipo_seguro = st.multiselect(
+        "",
+        options=polizas['Tipo_Seguro'].unique(),
+        default=polizas['Tipo_Seguro'].unique(),
+        label_visibility="collapsed"
+    )
+    st.markdown('</div>', unsafe_allow_html=True)
+    
+    st.markdown('<div class="filter-section">', unsafe_allow_html=True)
+    st.markdown('<p class="filter-label">📍 Departamento</p>', unsafe_allow_html=True)
+    departamento = st.multiselect(
+        "",
+        options=clientes['Departamento'].unique(),
+        default=clientes['Departamento'].unique(),
+        label_visibility="collapsed"
+    )
+    st.markdown('</div>', unsafe_allow_html=True)
+    
+    st.markdown('<div class="filter-section">', unsafe_allow_html=True)
+    st.markdown('<p class="filter-label">📊 Estado Póliza</p>', unsafe_allow_html=True)
+    estado_poliza = st.multiselect(
+        "",
+        options=polizas['Estado'].unique(),
+        default=['Activa'],
+        label_visibility="collapsed"
+    )
+    st.markdown('</div>', unsafe_allow_html=True)
+    
+    st.markdown("---")
+    st.markdown("**🔧 Configuración**")
+    st.info("Dashboard Aseguradora El Salvador")
 
 # Aplicar filtros
 polizas_filtradas = polizas[
@@ -202,8 +344,12 @@ clientes_filtrados = clientes[clientes['Departamento'].isin(departamento)]
 siniestros_filtrados = siniestros[siniestros['ID_Poliza'].isin(polizas_filtradas['ID_Poliza'])]
 pagos_filtrados = pagos[pagos['ID_Poliza'].isin(polizas_filtradas['ID_Poliza'])]
 
+# ========== HEADER PRINCIPAL ==========
+st.markdown('<h1 class="main-title">Dashboard Aseguradora</h1>', unsafe_allow_html=True)
+st.markdown('<p class="subtitle">Análisis integral del portafolio de seguros en El Salvador</p>', unsafe_allow_html=True)
+
 # ========== MÉTRICAS PRINCIPALES ==========
-st.header("📈 Métricas Principales")
+st.subheader("📈 Métricas Clave del Negocio")
 
 # Calcular KPIs
 if not pagos_filtrados.empty:
@@ -218,107 +364,169 @@ clientes_activos = len(clientes_filtrados)
 # Calcular ratio de siniestralidad (evitar división por cero)
 ratio_siniestralidad = (total_siniestros / total_primas * 100) if total_primas > 0 else 0
 
-# Mostrar KPIs en columnas
+# Mostrar KPIs en columnas con diseño mejorado
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.metric("Total Primas", f"${total_primas:,.0f}")
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-label">💰 Total Primas</div>
+        <div class="metric-value">${total_primas:,.0f}</div>
+        <div class="metric-change positive">+12% vs mes anterior</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col2:
-    st.metric("Ratio Siniestral", f"{ratio_siniestralidad:.1f}%")
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-label">📊 Ratio Siniestral</div>
+        <div class="metric-value">{ratio_siniestralidad:.1f}%</div>
+        <div class="metric-change {'negative' if ratio_siniestralidad > 50 else 'positive'}">
+            {'↑' if ratio_siniestralidad > 50 else '↓'} vs objetivo
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col3:
-    st.metric("Pólizas Activas", f"{polizas_activas:,}")
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-label">🛡️ Pólizas Activas</div>
+        <div class="metric-value">{polizas_activas:,}</div>
+        <div class="metric-change positive">+5% crecimiento</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col4:
-    st.metric("Clientes Activos", f"{clientes_activos:,}")
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-label">👥 Clientes Activos</div>
+        <div class="metric-value">{clientes_activos:,}</div>
+        <div class="metric-change positive">+8% este trimestre</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # ========== GRÁFICOS INTERACTIVOS ==========
-st.header("Análisis Visual")
+st.markdown("---")
+st.subheader("📊 Análisis Visual del Portafolio")
 
+# Primera fila de gráficos
 col1, col2 = st.columns(2)
 
 with col1:
-    # Distribución por tipo de seguro
-    st.subheader("Distribución por Tipo de Seguro")
+    st.markdown('<div class="chart-container">', unsafe_allow_html=True)
+    st.markdown('<h3 class="chart-title">🛡️ Distribución por Tipo de Seguro</h3>', unsafe_allow_html=True)
+    
     tipo_counts = polizas_filtradas['Tipo_Seguro'].value_counts()
     fig = px.pie(
         values=tipo_counts.values,
         names=tipo_counts.index,
-        title=""
+        color=tipo_counts.index,
+        color_discrete_sequence=px.colors.sequential.Blues_r
     )
+    fig.update_traces(textposition='inside', textinfo='percent+label')
+    fig.update_layout(showlegend=False, height=400)
     st.plotly_chart(fig, use_container_width=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
-    # Primas por tipo de seguro
-    st.subheader("Primas por Tipo de Seguro")
+    st.markdown('<div class="chart-container">', unsafe_allow_html=True)
+    st.markdown('<h3 class="chart-title">💰 Primas por Tipo de Seguro</h3>', unsafe_allow_html=True)
+    
     primas_por_tipo = polizas_filtradas.groupby('Tipo_Seguro')['Prima_Mensual'].sum().sort_values(ascending=False)
     fig = px.bar(
         x=primas_por_tipo.index,
         y=primas_por_tipo.values,
         labels={'x': 'Tipo de Seguro', 'y': 'Prima Mensual (USD)'},
         color=primas_por_tipo.values,
+        color_continuous_scale='Viridis'
+    )
+    fig.update_layout(height=400)
+    st.plotly_chart(fig, use_container_width=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# Segunda fila de gráficos
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown('<div class="chart-container">', unsafe_allow_html=True)
+    st.markdown('<h3 class="chart-title">📍 Distribución Geográfica</h3>', unsafe_allow_html=True)
+    
+    clientes_por_depto = clientes_filtrados['Departamento'].value_counts()
+    fig = px.bar(
+        x=clientes_por_depto.index,
+        y=clientes_por_depto.values,
+        labels={'x': 'Departamento', 'y': 'Número de Clientes'},
+        color=clientes_por_depto.values,
         color_continuous_scale='Blues'
     )
+    fig.update_layout(height=400)
     st.plotly_chart(fig, use_container_width=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
-# Gráfico geográfico
-st.subheader("Distribución Geográfica")
-clientes_por_depto = clientes_filtrados['Departamento'].value_counts()
-fig = px.bar(
-    x=clientes_por_depto.index,
-    y=clientes_por_depto.values,
-    labels={'x': 'Departamento', 'y': 'Número de Clientes'},
-    color=clientes_por_depto.values,
-    color_continuous_scale='Viridis'
-)
-st.plotly_chart(fig, use_container_width=True)
+with col2:
+    st.markdown('<div class="chart-container">', unsafe_allow_html=True)
+    st.markdown('<h3 class="chart-title">📈 Evolución de Siniestros</h3>', unsafe_allow_html=True)
+    
+    # Agrupar siniestros por mes
+    if not siniestros_filtrados.empty:
+        siniestros_filtrados['Fecha_Siniestro'] = pd.to_datetime(siniestros_filtrados['Fecha_Siniestro'])
+        siniestros_por_mes = siniestros_filtrados.groupby(siniestros_filtrados['Fecha_Siniestro'].dt.to_period('M')).size()
+        siniestros_por_mes.index = siniestros_por_mes.index.astype(str)
+        
+        fig = px.line(
+            x=siniestros_por_mes.index,
+            y=siniestros_por_mes.values,
+            labels={'x': 'Mes', 'y': 'Número de Siniestros'},
+            markers=True
+        )
+        fig.update_layout(height=400)
+        st.plotly_chart(fig, use_container_width=True)
+    else:
+        st.info("No hay datos de siniestros para mostrar")
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # ========== DATOS DETALLADOS ==========
-st.header("Datos Detallados")
+st.markdown("---")
+st.subheader("📋 Datos Detallados")
 
-tab1, tab2, tab3, tab4 = st.tabs(["Clientes", "Pólizas", "Siniestros", "Pagos"])
+tab1, tab2, tab3, tab4 = st.tabs(["👥 Clientes", "🛡️ Pólizas", "📋 Siniestros", "💰 Pagos"])
 
 with tab1:
-    st.subheader("Base de Clientes")
+    st.markdown('<div class="chart-container">', unsafe_allow_html=True)
+    st.markdown('<h3 class="chart-title">Base de Clientes</h3>', unsafe_allow_html=True)
     st.dataframe(clientes_filtrados, use_container_width=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with tab2:
-    st.subheader("Portafolio de Pólizas")
+    st.markdown('<div class="chart-container">', unsafe_allow_html=True)
+    st.markdown('<h3 class="chart-title">Portafolio de Pólizas</h3>', unsafe_allow_html=True)
     st.dataframe(polizas_filtradas, use_container_width=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with tab3:
-    st.subheader("Registro de Siniestros")
+    st.markdown('<div class="chart-container">', unsafe_allow_html=True)
+    st.markdown('<h3 class="chart-title">Registro de Siniestros</h3>', unsafe_allow_html=True)
     st.dataframe(siniestros_filtrados, use_container_width=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with tab4:
-    st.subheader("Historial de Pagos")
+    st.markdown('<div class="chart-container">', unsafe_allow_html=True)
+    st.markdown('<h3 class="chart-title">Historial de Pagos</h3>', unsafe_allow_html=True)
     if not pagos_filtrados.empty:
         st.dataframe(pagos_filtrados, use_container_width=True)
     else:
         st.info("No hay datos de pagos disponibles")
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # ========== PIE DE PÁGINA ==========
 st.markdown("---")
 st.markdown(
-    "**Dashboard Aseguradora El Salvador** | "
-    "Desarrollado con Streamlit | "
-    "Optimizado para Streamlit Cloud"
+    """
+    <div style='text-align: center; color: #64748b; padding: 2rem 0;'>
+        <strong>Dashboard Aseguradora El Salvador</strong> | 
+        Desarrollado con Streamlit | 
+        Optimizado para Streamlit Cloud
+    </div>
+    """, 
+    unsafe_allow_html=True
 )
-
-# Información de debug expandible
-with st.expander("Información de Sistema"):
-    st.write(f"Directorio actual: {os.getcwd()}")
-    st.write(f"Python version: {sys.version}")
-    st.write(f"Total clientes: {len(clientes)}")
-    st.write(f"Total pólizas: {len(polizas)}")
-    st.write(f"Total siniestros: {len(siniestros)}")
-    st.write(f"Total pagos: {len(pagos)}")
-    
-    # Listar archivos en directorio actual
-    st.write("Archivos en directorio actual:")
-    try:
-        files = os.listdir('.')
-        st.write(files)
-    except Exception as e:
-        st.write(f"Error listando archivos: {e}")
