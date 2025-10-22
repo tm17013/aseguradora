@@ -1,55 +1,175 @@
-# scripts/dashboard.py
 import streamlit as st
 import pandas as pd
+import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
-import numpy as np
+import os
+import sys
 
 # Configuración de la página
 st.set_page_config(
     page_title="Dashboard Aseguradora SV",
+    page_icon="🏢",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Título principal
-st.title("Dashboard Aseguradora - El Salvador")
+st.title("🏢 Dashboard Aseguradora - El Salvador")
 st.markdown("---")
 
-# Cargar datos
+# DEBUG: Mostrar información del sistema
+st.sidebar.info("🔧 Modo: Streamlit Cloud")
+
+# Función para generar datos de ejemplo
+@st.cache_data
+def generar_datos_completos():
+    """Genera datos completos de ejemplo para el dashboard"""
+    
+    # Configuración para El Salvador
+    DEPARTAMENTOS = ['San Salvador', 'Santa Ana', 'San Miguel', 'La Libertad', 'Usulután', 'Sonsonate']
+    TIPOS_SEGURO = ['Automóvil', 'Vida', 'Salud', 'Hogar', 'Empresarial']
+    
+    np.random.seed(42)
+    
+    # 1. GENERAR CLIENTES (200 clientes)
+    clientes = pd.DataFrame({
+        'ID_Cliente': range(1, 201),
+        'Nombre': [f'Cliente {i}' for i in range(1, 201)],
+        'Edad': np.random.randint(25, 65, 200),
+        'Genero': np.random.choice(['M', 'F'], 200),
+        'Departamento': np.random.choice(DEPARTAMENTOS, 200),
+        'Email': [f'cliente{i}@email.com' for i in range(1, 201)],
+        'Telefono': [f'7{np.random.randint(1000000, 9999999)}' for _ in range(200)],
+        'Fecha_Registro': pd.date_range('2020-01-01', periods=200, freq='D'),
+        'Segmento': np.random.choice(['Individual', 'Empresarial', 'Premium'], 200, p=[0.6, 0.3, 0.1])
+    })
+    
+    # 2. GENERAR PÓLIZAS (300 pólizas)
+    polizas = pd.DataFrame({
+        'ID_Poliza': [f'POL-{i:03d}' for i in range(1, 301)],
+        'ID_Cliente': np.random.randint(1, 201, 300),
+        'Tipo_Seguro': np.random.choice(TIPOS_SEGURO, 300),
+        'Monto_Asegurado': np.random.uniform(5000, 100000, 300).round(2),
+        'Prima_Mensual': np.random.uniform(50, 500, 300).round(2),
+        'Fecha_Inicio': pd.date_range('2022-01-01', periods=300, freq='D'),
+        'Fecha_Vencimiento': pd.date_range('2023-01-01', periods=300, freq='D'),
+        'Estado': np.random.choice(['Activa', 'Vencida', 'Cancelada'], 300, p=[0.7, 0.2, 0.1]),
+        'Vendedor': [f'Vendedor {np.random.randint(1, 11)}' for _ in range(300)]
+    })
+    
+    # 3. GENERAR SINIESTROS (100 siniestros)
+    siniestros = pd.DataFrame({
+        'ID_Siniestro': [f'SIN-{i:03d}' for i in range(1, 101)],
+        'ID_Poliza': np.random.choice(polizas['ID_Poliza'], 100),
+        'Fecha_Siniestro': pd.date_range('2022-06-01', periods=100, freq='D'),
+        'Tipo_Siniestro': np.random.choice(['Colisión', 'Robo', 'Incendio', 'Hospitalización', 'Muerte'], 100),
+        'Monto_Reclamado': np.random.uniform(1000, 20000, 100).round(2),
+        'Monto_Pagado': np.random.uniform(500, 15000, 100).round(2),
+        'Estado_Siniestro': np.random.choice(['Pagado', 'Rechazado', 'En Proceso'], 100, p=[0.7, 0.2, 0.1]),
+        'Departamento_Siniestro': np.random.choice(DEPARTAMENTOS, 100)
+    })
+    
+    # 4. GENERAR PAGOS
+    pagos = []
+    pago_id = 1
+    
+    for _, poliza in polizas.iterrows():
+        if poliza['Estado'] == 'Activa':
+            # Generar 6-12 pagos por póliza
+            num_pagos = np.random.randint(6, 13)
+            for mes in range(num_pagos):
+                fecha_pago = poliza['Fecha_Inicio'] + timedelta(days=30 * mes)
+                if fecha_pago < datetime.now():
+                    pagos.append({
+                        'ID_Pago': f'PAG-{pago_id:04d}',
+                        'ID_Poliza': poliza['ID_Poliza'],
+                        'Fecha_Pago': fecha_pago,
+                        'Monto_Pago': poliza['Prima_Mensual'],
+                        'Estado_Pago': np.random.choice(['Completado', 'Pendiente'], p=[0.9, 0.1]),
+                        'Metodo_Pago': np.random.choice(['Transferencia', 'Tarjeta', 'Efectivo'])
+                    })
+                    pago_id += 1
+    
+    pagos_df = pd.DataFrame(pagos)
+    
+    return clientes, polizas, siniestros, pagos_df
+
+# Cargar datos - VERSIÓN CORREGIDA PARA STREAMLIT CLOUD
 @st.cache_data
 def cargar_datos():
+    """Carga datos - CORREGIDO para Streamlit Cloud"""
+    
+    # Mostrar información de debug
+    current_dir = os.getcwd()
+    st.sidebar.write(f"Directorio: {current_dir}")
+    
     try:
-        clientes = pd.read_csv('../datos/clientes.csv', parse_dates=['Fecha_Registro'])
-        polizas = pd.read_csv('../datos/polizas.csv', parse_dates=['Fecha_Inicio', 'Fecha_Vencimiento'])
-        siniestros = pd.read_csv('../datos/siniestros.csv', parse_dates=['Fecha_Siniestro'])
-        pagos = pd.read_csv('../datos/pagos.csv', parse_dates=['Fecha_Pago'])
+        # EN STREAMLIT CLOUD, el dashboard.py está en /scripts/
+        # pero los datos deberían estar en la raíz: /datos/
+        
+        # Intentar rutas ABSOLUTAS para Streamlit Cloud
+        rutas_a_intentar = [
+            '/mount/src/aseguradora/datos/clientes.csv',  # Ruta ABSOLUTA en Streamlit Cloud
+            '../datos/clientes.csv',                      # Subir un nivel desde /scripts/
+            './datos/clientes.csv',                       # Relativo al script
+            'datos/clientes.csv',                         # Relativo al directorio de trabajo
+            'clientes.csv'                                # En el mismo directorio
+        ]
+        
+        archivos_encontrados = False
+        
+        for ruta in rutas_a_intentar:
+            if os.path.exists(ruta):
+                st.success(f"Datos cargados desde: {ruta}")
+                clientes = pd.read_csv(ruta)
+                polizas = pd.read_csv(ruta.replace('clientes', 'polizas'))
+                siniestros = pd.read_csv(ruta.replace('clientes', 'siniestros'))
+                
+                # Intentar cargar pagos (puede no existir)
+                try:
+                    pagos = pd.read_csv(ruta.replace('clientes', 'pagos'))
+                except:
+                    pagos = pd.DataFrame()
+                
+                archivos_encontrados = True
+                break
+        
+        if not archivos_encontrados:
+            st.info("No se encontraron archivos CSV. Generando datos de ejemplo...")
+            clientes, polizas, siniestros, pagos = generar_datos_completos()
+            
         return clientes, polizas, siniestros, pagos
-    except FileNotFoundError as e:
-        st.error(f"Error cargando datos: {e}")
-        st.info("Ejecuta primero: python scripts/generar_datos.py")
-        return None, None, None, None
+        
+    except Exception as e:
+        st.warning(f"Error cargando archivos: {e}")
+        st.info("Generando datos de ejemplo como respaldo...")
+        return generar_datos_completos()
 
-# Cargar datos
+# Cargar los datos
 clientes, polizas, siniestros, pagos = cargar_datos()
 
-if clientes is None:
-    st.stop()
+# Si no hay pagos, crear dataframe vacío
+if pagos.empty:
+    pagos = pd.DataFrame(columns=['ID_Pago', 'ID_Poliza', 'Fecha_Pago', 'Monto_Pago', 'Estado_Pago', 'Metodo_Pago'])
 
 # ========== SIDEBAR CON FILTROS ==========
 st.sidebar.title("🔍 Filtros")
 
-# Filtro por fecha
-fecha_min = pagos['Fecha_Pago'].min() if not pagos.empty else datetime.now()
-fecha_max = pagos['Fecha_Pago'].max() if not pagos.empty else datetime.now()
-
-rango_fechas = st.sidebar.date_input(
-    "Rango de Fechas",
-    value=[fecha_min.date(), fecha_max.date()],
-    min_value=fecha_min.date(),
-    max_value=fecha_max.date()
-)
+# Filtro por fecha (si existen los datos de pagos)
+if not pagos.empty and 'Fecha_Pago' in pagos.columns:
+    try:
+        fecha_min = pagos['Fecha_Pago'].min()
+        fecha_max = pagos['Fecha_Pago'].max()
+        
+        rango_fechas = st.sidebar.date_input(
+            "Rango de Fechas",
+            value=[fecha_min.date(), fecha_max.date()],
+            min_value=fecha_min.date(),
+            max_value=fecha_max.date()
+        )
+    except:
+        st.sidebar.info("Fechas no disponibles")
 
 # Filtros múltiples
 tipo_seguro = st.sidebar.multiselect(
@@ -70,21 +190,7 @@ estado_poliza = st.sidebar.multiselect(
     default=['Activa']
 )
 
-# ========== APLICAR FILTROS ==========
-if len(rango_fechas) == 2:
-    fecha_inicio, fecha_fin = rango_fechas
-    pagos_filtrados = pagos[
-        (pagos['Fecha_Pago'].dt.date >= fecha_inicio) & 
-        (pagos['Fecha_Pago'].dt.date <= fecha_fin)
-    ]
-    siniestros_filtrados = siniestros[
-        (siniestros['Fecha_Siniestro'].dt.date >= fecha_inicio) & 
-        (siniestros['Fecha_Siniestro'].dt.date <= fecha_fin)
-    ]
-else:
-    pagos_filtrados = pagos
-    siniestros_filtrados = siniestros
-
+# Aplicar filtros
 polizas_filtradas = polizas[
     (polizas['Tipo_Seguro'].isin(tipo_seguro)) & 
     (polizas['Estado'].isin(estado_poliza))
@@ -92,11 +198,19 @@ polizas_filtradas = polizas[
 
 clientes_filtrados = clientes[clientes['Departamento'].isin(departamento)]
 
-# ========== SECCIÓN 1: MÉTRICAS PRINCIPALES ==========
-st.header("Métricas Principales")
+# Filtrar siniestros y pagos basados en pólizas filtradas
+siniestros_filtrados = siniestros[siniestros['ID_Poliza'].isin(polizas_filtradas['ID_Poliza'])]
+pagos_filtrados = pagos[pagos['ID_Poliza'].isin(polizas_filtradas['ID_Poliza'])]
+
+# ========== MÉTRICAS PRINCIPALES ==========
+st.header("📈 Métricas Principales")
 
 # Calcular KPIs
-total_primas = pagos_filtrados[pagos_filtrados['Estado_Pago'] == 'Completado']['Monto_Pago'].sum()
+if not pagos_filtrados.empty:
+    total_primas = pagos_filtrados[pagos_filtrados['Estado_Pago'] == 'Completado']['Monto_Pago'].sum()
+else:
+    total_primas = polizas_filtradas['Prima_Mensual'].sum() * 12  # Estimación
+
 total_siniestros = siniestros_filtrados[siniestros_filtrados['Estado_Siniestro'] == 'Pagado']['Monto_Pagado'].sum()
 polizas_activas = len(polizas_filtradas[polizas_filtradas['Estado'] == 'Activa'])
 clientes_activos = len(clientes_filtrados)
@@ -108,31 +222,19 @@ ratio_siniestralidad = (total_siniestros / total_primas * 100) if total_primas >
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.metric(
-        "Total Primas Cobradas", 
-        f"${total_primas:,.2f}"
-    )
+    st.metric("Total Primas", f"${total_primas:,.0f}")
 
 with col2:
-    st.metric(
-        "Ratio de Siniestralidad", 
-        f"{ratio_siniestralidad:.1f}%"
-    )
+    st.metric("Ratio Siniestral", f"{ratio_siniestralidad:.1f}%")
 
 with col3:
-    st.metric(
-        "Pólizas Activas", 
-        f"{polizas_activas:,}"
-    )
+    st.metric("Pólizas Activas", f"{polizas_activas:,}")
 
 with col4:
-    st.metric(
-        "Clientes Activos", 
-        f"{clientes_activos:,}"
-    )
+    st.metric("Clientes Activos", f"{clientes_activos:,}")
 
-# ========== SECCIÓN 2: ANÁLISIS DE CARTERA ==========
-st.header("Análisis de Cartera")
+# ========== GRÁFICOS INTERACTIVOS ==========
+st.header("Análisis Visual")
 
 col1, col2 = st.columns(2)
 
@@ -150,107 +252,30 @@ with col1:
 with col2:
     # Primas por tipo de seguro
     st.subheader("Primas por Tipo de Seguro")
-    
-    # Unir pólizas con pagos para obtener primas reales
-    primas_por_tipo = polizas_filtradas.merge(
-        pagos_filtrados[pagos_filtrados['Estado_Pago'] == 'Completado'],
-        left_on='ID_Poliza',
-        right_on='ID_Poliza'
-    ).groupby('Tipo_Seguro')['Monto_Pago'].sum().sort_values(ascending=False)
-    
+    primas_por_tipo = polizas_filtradas.groupby('Tipo_Seguro')['Prima_Mensual'].sum().sort_values(ascending=False)
     fig = px.bar(
         x=primas_por_tipo.index,
         y=primas_por_tipo.values,
-        labels={'x': 'Tipo de Seguro', 'y': 'Primas (USD)'}
+        labels={'x': 'Tipo de Seguro', 'y': 'Prima Mensual (USD)'},
+        color=primas_por_tipo.values,
+        color_continuous_scale='Blues'
     )
     st.plotly_chart(fig, use_container_width=True)
 
-# ========== SECCIÓN 3: ANÁLISIS GEOGRÁFICO ==========
-st.header("Análisis Geográfico")
+# Gráfico geográfico
+st.subheader("Distribución Geográfica")
+clientes_por_depto = clientes_filtrados['Departamento'].value_counts()
+fig = px.bar(
+    x=clientes_por_depto.index,
+    y=clientes_por_depto.values,
+    labels={'x': 'Departamento', 'y': 'Número de Clientes'},
+    color=clientes_por_depto.values,
+    color_continuous_scale='Viridis'
+)
+st.plotly_chart(fig, use_container_width=True)
 
-col1, col2 = st.columns(2)
-
-with col1:
-    # Clientes por departamento
-    st.subheader("Clientes por Departamento")
-    clientes_por_depto = clientes_filtrados['Departamento'].value_counts()
-    fig = px.bar(
-        x=clientes_por_depto.index,
-        y=clientes_por_depto.values,
-        labels={'x': 'Departamento', 'y': 'Número de Clientes'}
-    )
-    st.plotly_chart(fig, use_container_width=True)
-
-with col2:
-    # Siniestros por departamento
-    st.subheader("Siniestros por Departamento")
-    siniestros_por_depto = siniestros_filtrados.groupby('Departamento_Siniestro')['Monto_Pagado'].sum()
-    
-    if not siniestros_por_depto.empty:
-        fig = px.bar(
-            x=siniestros_por_depto.index,
-            y=siniestros_por_depto.values,
-            labels={'x': 'Departamento', 'y': 'Monto Pagado (USD)'}
-        )
-        st.plotly_chart(fig, use_container_width=True)
-    else:
-        st.info("No hay datos de siniestros para los filtros seleccionados")
-
-# ========== SECCIÓN 4: ANÁLISIS TEMPORAL ==========
-st.header("Análisis Temporal")
-
-# Primas mensuales
-st.subheader("Evolución de Primas Mensuales")
-if not pagos_filtrados.empty:
-    pagos_mensuales = pagos_filtrados[pagos_filtrados['Estado_Pago'] == 'Completado'].copy()
-    pagos_mensuales['Mes_Año'] = pagos_mensuales['Fecha_Pago'].dt.to_period('M')
-    primas_mensuales = pagos_mensuales.groupby('Mes_Año')['Monto_Pago'].sum().reset_index()
-    primas_mensuales['Mes_Año'] = primas_mensuales['Mes_Año'].astype(str)
-
-    fig = px.line(
-        primas_mensuales,
-        x='Mes_Año',
-        y='Monto_Pago',
-        labels={'Mes_Año': 'Mes', 'Monto_Pago': 'Primas (USD)'}
-    )
-    st.plotly_chart(fig, use_container_width=True)
-else:
-    st.info("No hay datos de pagos para los filtros seleccionados")
-
-# ========== SECCIÓN 5: ANÁLISIS DE SINIESTROS ==========
-st.header("Análisis de Siniestros")
-
-col1, col2 = st.columns(2)
-
-with col1:
-    # Siniestros por tipo
-    st.subheader("Siniestros por Tipo")
-    if not siniestros_filtrados.empty:
-        siniestros_por_tipo = siniestros_filtrados.groupby('Tipo_Siniestro')['Monto_Pagado'].sum()
-        fig = px.bar(
-            x=siniestros_por_tipo.index,
-            y=siniestros_por_tipo.values,
-            labels={'x': 'Tipo de Siniestro', 'y': 'Monto Pagado (USD)'}
-        )
-        st.plotly_chart(fig, use_container_width=True)
-    else:
-        st.info("No hay datos de siniestros")
-
-with col2:
-    # Estado de siniestros
-    st.subheader("Estado de Siniestros")
-    if not siniestros_filtrados.empty:
-        estado_counts = siniestros_filtrados['Estado_Siniestro'].value_counts()
-        fig = px.pie(
-            values=estado_counts.values,
-            names=estado_counts.index
-        )
-        st.plotly_chart(fig, use_container_width=True)
-    else:
-        st.info("No hay datos de siniestros")
-
-# ========== SECCIÓN 6: DETALLE DE DATOS ==========
-st.header("Detalle de Datos")
+# ========== DATOS DETALLADOS ==========
+st.header("Datos Detallados")
 
 tab1, tab2, tab3, tab4 = st.tabs(["Clientes", "Pólizas", "Siniestros", "Pagos"])
 
@@ -268,12 +293,32 @@ with tab3:
 
 with tab4:
     st.subheader("Historial de Pagos")
-    st.dataframe(pagos_filtrados, use_container_width=True)
+    if not pagos_filtrados.empty:
+        st.dataframe(pagos_filtrados, use_container_width=True)
+    else:
+        st.info("No hay datos de pagos disponibles")
 
 # ========== PIE DE PÁGINA ==========
 st.markdown("---")
 st.markdown(
     "**Dashboard Aseguradora El Salvador** | "
     "Desarrollado con Streamlit | "
-    "Datos de ejemplo generados para fines demostrativos"
+    "Optimizado para Streamlit Cloud"
 )
+
+# Información de debug expandible
+with st.expander("Información de Sistema"):
+    st.write(f"Directorio actual: {os.getcwd()}")
+    st.write(f"Python version: {sys.version}")
+    st.write(f"Total clientes: {len(clientes)}")
+    st.write(f"Total pólizas: {len(polizas)}")
+    st.write(f"Total siniestros: {len(siniestros)}")
+    st.write(f"Total pagos: {len(pagos)}")
+    
+    # Listar archivos en directorio actual
+    st.write("Archivos en directorio actual:")
+    try:
+        files = os.listdir('.')
+        st.write(files)
+    except Exception as e:
+        st.write(f"Error listando archivos: {e}")
